@@ -1,6 +1,4 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import Button from "../component/button";
 import { Button2 } from "../component/button";
 
 const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks }) => {

@@ -53,7 +53,7 @@ const Navbar = () => {
           className="max-lg:block hidden  cursor-pointer "
           onClick={() => setMenuOpen(true)}
         >
-        <img src="/public/menu.svg" alt="" />
+        <img src="/menu.svg" alt="" />
         </div>
 
         <a

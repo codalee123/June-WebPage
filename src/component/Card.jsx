@@ -29,3 +29,16 @@ const Card = ({icon,number,title,desc}) => {
 }
 
 export default Card
+
+export const CorePillars = ({imgBg, imgPath, title, text, cardBg="bg-white"}) => {
+ return(
+  <section className={`${cardBg} rounded-md flex flex-col items-center text-center px-6 py-4 gap-2.5`}>
+    <div className={`${imgBg} rounded-[50%] h-12 justify-center flex items-center w-12`}>
+      <img src={imgPath} alt='vectorImg' />
+    </div>
+
+    <h1 className='font-bold text-l'>{title}</h1>
+    <span className='text-gray-600 text-[13px]'>{text}</span>
+  </section>
+ )
+}

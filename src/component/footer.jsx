@@ -46,17 +46,17 @@ const Footer = () => {
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8  w-[45%] '>
                   PRODUCT
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href=""  className='hover:text-[#a16afa] '>Solutions</a>
-                    <a href=""  className='hover:text-[#a16afa] '>Skygrit</a>
-                    <a href=""  className='hover:text-[#a16afa] '>Developers</a>
+                    <a href=""  className='hover:text-[#a16afa] w-max'>Solutions</a>
+                    <a href=""  className='hover:text-[#a16afa] w-max'>Skygrit</a>
+                    <a href=""  className='hover:text-[#a16afa] w-max'>Developers</a>
                   </div>
                 </div>
 
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8 w-[45%] '>
                   RESOURCES
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href="" className='hover:text-[#a16afa] '>What’s new?</a>
-                    <a href="" className='hover:text-[#a16afa] '>Blogs</a>
+                    <a href="" className='hover:text-[#a16afa] w-max'>What’s new?</a>
+                    <a href="" className='hover:text-[#a16afa] w-max'>Blogs</a>
                   </div>
                 </div>
                 
@@ -68,18 +68,18 @@ const Footer = () => {
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8  w-[45%] '>
                   COMPANY
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href="" className='hover:text-[#a16afa] '>About Us</a>
-                    <a href=""className='hover:text-[#a16afa] '>Careers</a>
-                    <a href="" className='hover:text-[#a16afa] '>Events</a>
+                    <a href="" className='hover:text-[#a16afa] w-max '>About Us</a>
+                    <a href=""className='hover:text-[#a16afa] w-max '>Careers</a>
+                    <a href="" className='hover:text-[#a16afa] w-max'>Events</a>
                   </div>
                 </div>
 
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8 w-[45%] max-md:pl-6  '>
                   SUPPORT
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href="" className='hover:text-[#a16afa] '>Contact Us</a>
-                    <a href="" className='hover:text-[#a16afa] '>Privacy Policy</a>
-                    <a href="" className='hover:text-[#a16afa] '>Terms of Service</a>
+                    <a href="" className='hover:text-[#a16afa] w-max '>Contact Us</a>
+                    <a href="" className='hover:text-[#a16afa] w-max'>Privacy Policy</a>
+                    <a href="" className='hover:text-[#a16afa] w-max'>Terms of Service</a>
                   </div>
                 </div>
                 

@@ -42,3 +42,59 @@ export const CorePillars = ({imgBg, imgPath, title, text, cardBg="bg-white"}) =>
   </section>
  )
 }
+
+export const Card2 =({icon,role,title,desc})=>{
+  return (
+    <div className="w-full h-full bg-[#a16afa0d] rounded-lg  flex flex-col hover:shadow-sm hover:scale-105 active:scale-95  p-6 relative ">
+
+      {/* Icon top-right */}
+        <img
+          src={icon}
+          alt="icon"
+          className="h-[23%] w-[16%]  absolute top-4 left-4"
+        />
+
+      <div className='text-start my-15'>
+
+        {/* Title */}
+        <h3 className="text-xl font-bold mt-1">{title}</h3>
+
+        {/* Description */}
+        <p className="text-[rgba(0,0,0,1)] text-[14px] font-light mt-3 leading-relaxed">
+          {desc}
+        </p>
+      </div>
+      
+        {/* Role */}
+        <p className="text-sm font-bold text-purple-400 mt-auto">{role}</p>
+      
+    </div>
+  )
+
+}
+
+export const Card3 = ({icon,title,desc})=>{
+  return(
+    <div className="w-full h-48 bg-[#fbf8ff] rounded-lg  flex flex-col  p-6 relative ">
+
+      {/* Icon top-right */}
+        <img
+          src={icon}
+          alt="icon"
+          className=" absolute top-4 w-12 h-12 left-6"
+        />
+
+      <div className='text-start my-15'>
+
+        {/* Title */}
+        <h3 className="text-[18px] font-bold mt-1">{title}</h3>
+
+        {/* Description */}
+        <p className="text-[#64728f] text-[13px] font-normal mt-3 leading-relaxed">
+          {desc}
+        </p>
+      </div>
+      
+    </div>
+  )
+}

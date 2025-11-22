@@ -1,8 +1,122 @@
 import React from 'react'
+import { Card2, Card3 } from '../component/Card'
+import { Explore2 } from '../pages/Explore'
 
 const Solutions = () => {
+
+  const cards = [
+   
+    {
+      id: 1,
+      icon: "/Jet2.svg",
+      title: "For Founders",
+      desc: "Launch your MVP in days with no code, no CTO, and no servers. Use pre-built packs for Fintech, Ecommerce, Logistics, Education, and beyond.",
+      role: "Get Started"
+    },
+    {
+      id: 2,
+      icon: "/Jet2.svg",
+      title: "For SMEs",
+      desc: "Manage customers, payments, workflows, and compliance in one simple dashboard.",
+      role: "Learn More"
+    },
+    {
+      id: 3,
+      icon: "/Jet2.svg",
+      title: "For Enterprises",
+      desc: "Integrate June into your existing systems for scalable, compliant, multi-tenant solutions.",
+      role: "Contact Sales"
+    },
+  ]
   return (
-    <div>Solutions</div>
+      <>
+        <div className=" h-screen  bg-[#141414] gap-20  relative flex p-20 justify-center items-center  ">
+      
+          {/* Main Content */}
+          <section className=' w-full max-w-110 h-max text-start space-y-4  text-white'>
+            <div className="text-5xl font-black  font-inter max-md:text-3xl max-lg:text-8xl lg:leading-[50px]">
+              One Platform. Infinite Possibilities.
+            </div>
+
+            <p className='text-[14px] font-inter font-normal pb-8 text-[#fdf9f0]'>
+              June delivers infrastructure that adapts to your business, so you can focus on growth and customers.
+            </p>
+
+          </section>
+
+          {/* IMAGE */}
+
+          <div >
+            <img src="/Solution-vector.svg" className='w-120 h-120' alt="" />
+          </div>
+        </div>
+
+        <div className='h-max px-20  py-8 max-lg:px-8 max-md:px-6  '>
+
+          {/* Content-section */}
+          <header className=' max-w-140 max-md:max-w-80  '>
+            <p className='text-5xl capitalize text-black font-bold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
+              Building for businesses at every stage
+            </p>
+            <p className='font-normal text-[15px] max-w-[80%] max-md:text-[15px] max-md:leading-7 mt-4'>
+              From idea to scale, June gives you the infrastructure to launch fast, grow securely, and expand confidently.
+            </p>
+          </header>
+        </div>  
+
+        {/* Card-box */}
+        <div className="flex flex-wrap px-20 gap-6 my-10">
+
+        {/* Cards */}
+            {cards.map((card) => (
+              <div key={card.id} className="max-md:w-full flex-col flex cursor-pointer max-lg:w-[48%] w-[31%]">
+                <Card2
+                  icon={card.icon}
+                  role={card.role}
+                  title={card.title}
+                  desc={card.desc}
+                />
+              </div>
+            ))}
+        </div>
+        {/* Solution-Category */}
+         <section className='h-max pl-20 pr-10  py-8 max-lg:px-8 max-md:px-6  '>
+            <p className='text-5xl capitalize text-black font-semibold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
+              <span className='text-[#7d55e5]'>Solution</span> Categories
+            </p>
+
+              {/* Card-Section */}
+            <div className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              <Card3
+                icon={"/public/fintech.svg"}
+                title={"Fintech Infrastructure"}
+                desc={"Wallets, KYC/AML, payments, automation."}
+              />
+
+              <Card3
+                icon={"/commerce.svg"}
+                title={"Commerce Infrastructure"}
+                desc={"Catalogs, checkout, logistics, CRM."}
+              />
+
+              <Card3
+                icon={"/compliance.svg"}
+                title={"Compliance & Security"}
+                desc={"Enterprise-grade privacy, encryption, and data sovereignty."}
+              />
+
+              <Card3
+                icon={"/industry.svg"}
+                title={"Industry Verticals"}
+                desc={"Flagship verticals (Skygrit → aviation)."}
+              />
+            </div>
+         </section>    
+
+        <Explore2 
+          text={"Ready to Transform Your Business?"} 
+         />    
+      </>
   )
 }
 

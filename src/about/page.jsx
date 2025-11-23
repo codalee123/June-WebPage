@@ -5,7 +5,7 @@ import { ExploreWithButton, ExploreWithoutButton } from "../pages/Explore";
 const About = () => {
  return (
   <div>
-   <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-start">
+   <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-start">
     <div className="text-6xl w-120 h-max text-white font-bold font-inter max-md:text-3xl max-md:pt-20 max-md:w-75 max-lg:text-8xl">
      Africa's <br /> Cloud Backbone for Builders and Businesses
     </div>
@@ -14,15 +14,15 @@ const About = () => {
     </div>
    </section>
 
-   <section className="bg-white w-full flex flex-col justify-center items-center max-md:px-4">
-    <div className="flex justify-between w-full max-w-250 bg-[#F4F3FF] h-80 mt-15 max-md:flex-col max-md:h-100">
-     <div className="flex flex-col py-10 pl-10 w-145 gap-8 max-md:bg-red-700 max-md:w-90 max-md:pl-4">
+   <section className="bg-white w-full flex flex-col justify-center items-center">
+    <div className="flex justify-between w-full max-w-250 bg-[#F4F3FF] h-80 mt-15 max-md:flex-col max-md:h-[400px] max-md:w-[350px] max-md:px-10 max-md:items-center max-md:relative">
+     <div className="flex flex-col py-10 pl-10 w-145 gap-8 max-md:w-85 max-md:pl-4">
       <div>
        <div className="flex items-center gap-2">
         <span className="border-blue-950 w-8 border-b-2 inline-block"></span>{" "}
         OUR MISSION{" "}
        </div>
-       <p className="font-bold pl-10 max-md:text-[12px]">
+       <p className="font-bold pl-10 max-md:text-[12px] max-md:w-[19rem]">
         Provide founders and businesses with secure, high performance digital
         infrastructure to build, launch, and scale their businesses without
         starting from scratch.
@@ -33,14 +33,14 @@ const About = () => {
         <span className="border-blue-950 w-8 border-b-2 inline-block"></span>{" "}
         OUR VISION{" "}
        </div>
-       <p className="font-bold pl-10 max-md:text-[12px]">
+       <p className="font-bold pl-10 max-md:text-[12px] max-md:w-[19rem]">
         To power Africa’s future by providing the scalable technology
         infrastructure every founder, small business, and enterprise needs to
         thrive.
        </p>
       </div>
      </div>
-     <img src="about_vector.svg" alt="vector" className="h-[100%] max-md:rotate-90" />
+     <img src="about_vector.svg" alt="vector" className="max-md:rotate-90 max-md:w-33.5 max-md:pl-10 max-md:absolute max-md:bottom-[-6.5rem]" />
     </div>
 
      <div className="mt-20 flex w-full max-w-250 justify-between gap-8 max-md:flex-col max-md:items-center">
@@ -57,7 +57,7 @@ const About = () => {
        </article>
      </div>
 
-     <div className="grid grid-cols-4 gap-10 w-full max-w-250 py-20 max-md:grid-cols-1">
+     <div className="grid grid-cols-4 gap-10 w-full max-w-250 py-20 max-md:grid-cols-1 max-md:px-10">
        <CorePillars 
         imgBg={"bg-[rgba(166,26,230,0.1)]"}
         imgPath={"/about_speed.svg"}

@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="bg-[rgba(161,106,250,0.1)] pb-[5rem] pt-10 px-20 h-screen max-md:h-max max-md:pb-[2rem]">
         <h1 className="text-5xl text-black py-6 font-black max-md:text-2xl">Contact Us</h1>
 
-        <section className="flex bg-white gap-6 justify-self-center w-290 max-md:flex-col max-md:w-170 max-md:items-center">
+        <section className="flex bg-white gap-6 justify-self-center w-290 max-md:flex-col max-md:w-170 max-md:items-center max-md:gap-4">
             <div className="bg-black p-6 overflow-hidden relative h-100 w-[50%] text-white">
               <img 
                 src="/contact_vector.svg" 
@@ -20,13 +20,13 @@ const Contact = () => {
               <p className="text-[13px]">Get in touch and let June accelerate your business</p>
             </div>
 
-            <form className="flex flex-col gap-4 px-10 pt-15 text-gray-400 w-[50%] bg-red-500">
+            <form className="flex flex-col gap-4 px-10 pt-15 text-gray-400 w-[50%] max-md:pt-6 max-md:px-6 max-md:pb-10">
               <div>
                 <label htmlFor="name">First Name</label>
                 <input
                   type="text"
                   name="name"
-                  className="border-b-2 border-gray-400 block w-[100%]"
+                  className="border-b-2 border-gray-400 block w-[100%] h-10 focus:outline-none focus:border-black"
                 />
               </div>
               <div>
@@ -34,7 +34,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  className="border-b-2 border-gray-400 block w-[100%]"
+                  className="border-b-2 border-gray-400 block w-[100%] h-10 focus:outline-none focus:border-black"
                 />
               </div>
               <div>
@@ -43,7 +43,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Type your requests or enquiries here..."
-                  className="border-b-2 border-gray-400 block w-[100%]"
+                  className="border-b-2 border-gray-400 block w-[100%] h-25 focus:outline-none focus:border-black"
                 ></textarea>
               </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card2, Card3 } from '../component/Card'
-import { Explore2 } from '../pages/Explore'
+import { ExploreWithButton} from '../pages/Explore'
 
 const Solutions = () => {
 
@@ -30,15 +30,15 @@ const Solutions = () => {
   ]
   return (
       <>
-        <div className=" h-screen  bg-[#141414] gap-20  relative flex p-20 justify-center items-center  ">
+        <div className=" h-screen   bg-[#141414] gap-20 max-lg:gap-10  max-lg:flex-col max-sm:py-20  relative flex px-20 max-sm:px-6 justify-center items-center  ">
       
           {/* Main Content */}
-          <section className=' w-full max-w-110 h-max text-start space-y-4  text-white'>
-            <div className="text-5xl font-black  font-inter max-md:text-3xl max-lg:text-8xl lg:leading-[50px]">
+          <section className=' w-full max-w-110 max-lg:max-w-full h-max text-start space-y-6  text-white'>
+            <div className="text-5xl font-black  font-inter max-md:text-[38px] max-lg:text-6xl lg:leading-[50px]">
               One Platform. Infinite Possibilities.
             </div>
 
-            <p className='text-[14px] font-inter font-normal pb-8 text-[#fdf9f0]'>
+            <p className='text-[14px] max-md:text-base font-inter font-normal pb-8 text-[#fdf9f0]'>
               June delivers infrastructure that adapts to your business, so you can focus on growth and customers.
             </p>
 
@@ -47,25 +47,25 @@ const Solutions = () => {
           {/* IMAGE */}
 
           <div >
-            <img src="/Solution-vector.svg" className='w-120 h-120' alt="" />
+            <img src="/Solution-vector.svg" className='w-120 h-120 max-lg:w-full max-lg:h-full ' alt="" />
           </div>
         </div>
 
         <div className='h-max px-20  py-8 max-lg:px-8 max-md:px-6  '>
 
           {/* Content-section */}
-          <header className=' max-w-140 max-md:max-w-80  '>
-            <p className='text-5xl capitalize text-black font-bold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
+          <header className=' max-w-140 max-md:max-w-full  '>
+            <p className='text-5xl capitalize text-black font-bold leading-[60px] max-md:text-[42px] max-md:leading-10 '>
               Building for businesses at every stage
             </p>
-            <p className='font-normal text-[15px] max-w-[80%] max-md:text-[15px] max-md:leading-7 mt-4'>
+            <p className='font-normal text-[15px] text-[#121212] max-w-[80%] max-md:max-w-full max-md:text-[20px] max-md:leading-7 mt-4 '>
               From idea to scale, June gives you the infrastructure to launch fast, grow securely, and expand confidently.
             </p>
           </header>
         </div>  
 
         {/* Card-box */}
-        <div className="flex flex-wrap px-20 gap-6 my-10">
+        <div className="flex flex-wrap px-20 max-lg:px-6 gap-6 my-10">
 
         {/* Cards */}
             {cards.map((card) => (
@@ -113,7 +113,7 @@ const Solutions = () => {
             </div>
          </section>    
 
-        <Explore2 
+        <ExploreWithButton 
           text={"Ready to Transform Your Business?"} 
          />    
       </>

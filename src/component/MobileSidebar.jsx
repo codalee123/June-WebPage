@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Button2 } from "../component/button";
+import { MobileButton } from "../component/button";
 
 const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks }) => {
   return (
@@ -39,7 +39,7 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks }) => {
 
         {/* BUTTON */}
         <div className="mt-4">
-          <Button2 text={"Get In Touch"} logo={"/arrow-right.svg"} />
+          <MobileButton text={"Get In Touch"} logo={"/arrow-right.svg"} />
         </div>
       </section>  
 

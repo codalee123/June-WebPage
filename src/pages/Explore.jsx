@@ -19,23 +19,36 @@ const Explore = () => {
 
 export default Explore
 
-export const Explore2 =({text,desc})=> {
-
-  const color = "bg-[rgba(161,106,250,1)]"
+export const ExploreWithButton =({text,desc,text1="Book a Demo",text2="Explore Industry Solutions"})=> {
   return(
-    <div className='full h-max flex text-white py-20 max-lg:px-8 max-md:px-5 bg-black justify-center items-center'>
-      <blockquote className='flex flex-col gap-10 max-md:justify-center text-center max-md:items-center  '>
-        <h2 className='font-black text-4xl max-md:text-[40px] leading-12 '>
+    <div className='full font-inter h-max flex text-white font-normal py-20 max-md:py-10 max-lg:px-8 max-md:px-5 bg-black justify-center items-center'>
+      <blockquote className='flex flex-col  gap-5 max-md:gap-6 max-md:justify-center text-center max-md:items-center  '>
+        <h2 className='font-black text-4xl max-md:text-3xl leading-12 '>
           {text}
         </h2> 
-        {desc && <p>{desc}</p>}
+        {desc && <p className='font-normal max-md:text-[21px]'>{desc}</p>}
 
         <div className='flex  flex-wrap gap-4 justify-center items-center'>
           <Button2
-            text1={"Book a Demo"} 
-            text2={"Explore Industry Solutions"}
+            text1={text1} 
+            text2={text2}
           />
         </div>
+      </blockquote>
+    </div>
+  )
+}
+
+
+
+export const ExploreWithoutButton =({text,desc})=> {
+  return(
+    <div className='full h-max font-inter flex text-white py-20 max-lg:px-8 max-md:px-5 bg-black justify-center items-center'>
+      <blockquote className='flex flex-col gap-5 max-md:justify-center text-center max-md:items-center  '>
+        <h2 className='font-black text-4xl max-md:text-[40px] leading-12 '>
+          {text}
+        </h2> 
+        {desc && <p className='font-normal max-md:text-[21px]'>{desc}</p>}
       </blockquote>
     </div>
   )

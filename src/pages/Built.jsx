@@ -17,25 +17,25 @@ const Built = () => {
 
         {/* Image-section */}
         <div className="flex flex-wrap w-full gap-0 justify-center my-10">
-          <div className="max-md:w-[50%] rounded-lg max-lg:w-[48%] w-[20%]">
+          <div className="max-md:w-[50%] rounded-lg max-lg:w-[20%] w-[20%]">
             <img src="/founder2.svg" alt="" />
           </div>
 
-          <div className="max-md:w-[50%] rounded-lg max-lg:w-[%] w-[20%] ">
+          <div className="max-md:w-[50%] rounded-lg max-lg:w-[20%] w-[20%] ">
             <img 
             src="/Sme.svg" 
             alt="" 
             />
           </div>
 
-          <div className="max-md:w-[50%] rounded-lg max-lg:w-[%] w-[20%] ">
+          <div className="max-md:w-[50%] rounded-lg max-lg:w-[20%] w-[20%] ">
             <img 
             src="/enterprise.svg" 
             alt="" 
             />
           </div>
 
-          <div className="max-md:w-[50%] rounded-lg max-lg:w-[%] w-[20%] ">
+          <div className="max-md:w-[50%] rounded-lg max-lg:w-[20%] w-[20%] ">
             <img 
             src="/image.svg" 
             alt="" 

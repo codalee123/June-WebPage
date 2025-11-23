@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 
 import { CorePillars } from "../component/Card"
+import { ExploreWithButton } from "../pages/Explore"
 
 const Contact = () => {
   return (
@@ -19,7 +20,7 @@ const Contact = () => {
               <p className="text-[13px]">Get in touch and let June accelerate your business</p>
             </div>
 
-            <form className="flex flex-col gap-4 px-10 pt-15 text-gray-400 w-[50%] bg-red-500">
+            <form className="flex flex-col gap-4 px-10 pt-15 text-gray-400 w-[50%] ">
               <div>
                 <label htmlFor="name">First Name</label>
                 <input
@@ -72,6 +73,14 @@ const Contact = () => {
                 text={"+2348031234567"}
               />
             </div>
+
+            <ExploreWithButton
+              text={"Ready to Get Started?"}
+              desc={"Book a consultation with our team to discuss how June can transform your business."}
+              text1={"Book a Consultation"}
+              text2={"Join Our Partner Network"}
+
+            />
     </>
   )
 }

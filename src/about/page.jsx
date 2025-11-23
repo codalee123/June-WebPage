@@ -1,5 +1,6 @@
 import React from "react";
 import { CorePillars } from "../component/Card";
+import { ExploreWithButton, ExploreWithoutButton } from "../pages/Explore";
 
 const About = () => {
  return (
@@ -88,6 +89,12 @@ const About = () => {
       
      </div>
    </section>
+
+   <ExploreWithoutButton
+    text={"Our Promise"}
+    desc={"June is building the digital backbone for Africa's next billion-dollar companies."}
+   
+   />
   </div>
  );
 };

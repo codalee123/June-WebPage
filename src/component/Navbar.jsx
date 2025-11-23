@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { AppRoutes } from '../Utils/route'
-import Button from '../component/button'
+import {Button} from '../component/button'
 import MobileSidebar from './MobileSidebar'
 
 const navLinks = [

@@ -19,7 +19,7 @@ const About = () => {
      <div className="flex flex-col py-10 pl-10 w-145 gap-8 max-md:w-85 max-md:pl-4 max-lg:gap-15 max-lg:w-150">
       <div>
        <div className="flex items-center gap-2">
-        <span className="border-blue-950 w-8 border-b-2 inline-block"></span>{" "}
+        <span className="border-[#a16afa] w-8 border-b-2 inline-block"></span>{" "}
         OUR MISSION{" "}
        </div>
        <p className="font-bold pl-10 max-md:text-[12px] max-md:w-[19rem] max-lg:text-[17.5px]">
@@ -30,7 +30,7 @@ const About = () => {
       </div>
       <div>
        <div className="flex items-center gap-2">
-        <span className="border-blue-950 w-8 border-b-2 inline-block"></span>{" "}
+        <span className="border-[#a16afa] w-8 border-b-2 inline-block"></span>{" "}
         OUR VISION{" "}
        </div>
        <p className="font-bold pl-10 max-md:text-[12px] max-md:w-[19rem] max-lg:text-[17.5px]">

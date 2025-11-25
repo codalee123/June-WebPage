@@ -93,7 +93,7 @@ const Navbar = () => {
       {/* PRODUCT DROPDOWN */}
 
       {productOpen && (
-        <div className="fixed top-[65px] left-0 w-full flex justify-center z-9999 animate-dropdown">
+        <div className="fixed top-[65px] left-0 w-full flex justify-center z-9999">
           <ProductDropdownCard />
         </div>
       )}
@@ -103,6 +103,9 @@ const Navbar = () => {
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
           navLinks={navLinks}
+          // productOpen={productOpen}
+          // setProductOpen={setProductOpen}
+          closeDropdown={closeDropdown}
         />
     </>
  

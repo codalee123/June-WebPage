@@ -4,7 +4,7 @@ import { ExploreWithButton, ExploreWithoutButton } from "../pages/Explore";
 
 const About = () => {
  return (
-  <div>
+  <div className="overflow-hidden">
    <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-start max-lg:items-center max-lg:gap-10">
     <div className="text-6xl w-120 h-max text-white font-bold font-inter max-md:text-3xl max-md:pt-20 max-md:w-75 max-lg:text-6xl max-lg:pt-30 max-lg:w-150">
      Africa's <br /> Cloud Backbone for Builders and Businesses
@@ -40,7 +40,7 @@ const About = () => {
        </p>
       </div>
      </div>
-     <img src="about_vector.svg" alt="vector" className="h-[100%] max-md:rotate-90 max-md:w-33.5 max-md:pl-10 max-md:absolute max-md:bottom-[-6.5rem]" />
+     <img src="about_vector.svg" alt="vector" className="h-[100%] max-md:rotate-90 max-md:w-19.5 max-md:ml-12 max-md:absolute max-md:bottom-[-10rem]" />
     </div>
 
      <div className="mt-20 flex w-full max-w-250 justify-between gap-8 max-md:flex-col max-md:items-center max-lg:w-[650px]">
@@ -57,7 +57,7 @@ const About = () => {
        </article>
      </div>
 
-     <div className="grid grid-cols-4 gap-10 w-full max-w-250 py-20 max-md:grid-cols-1 max-md:px-10 max-lg:grid-cols-2 max-lg:w-[650px]">
+     <div className="grid grid-cols-4 gap-10 w-full max-w-250 py-20 max-md:grid-cols-1 max-md:w-[350px] max-lg:grid-cols-2 max-lg:w-[650px]">
        <CorePillars 
         imgBg={"bg-[rgba(166,26,230,0.1)]"}
         imgPath={"/about_speed.svg"}

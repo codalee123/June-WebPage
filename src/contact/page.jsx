@@ -9,14 +9,14 @@ const Contact = () => {
     <div className="bg-[rgba(161,106,250,0.1)] pb-[5rem] pt-10 px-20 h-screen max-md:h-max max-md:pb-[2rem]">
         <h1 className="text-5xl text-black py-6 font-black max-md:text-2xl">Contact Us</h1>
 
-        <section className="flex bg-white gap-6 justify-self-center w-290 max-md:flex-col max-md:w-170 max-md:items-center max-md:gap-4 max-lg:flex-col max-lg:w-150 max-lg:items-center max-lg:pt-4">
+        <section className="flex bg-white gap-6 justify-self-center w-290 max-md:flex-col max-md:w-[380px] max-md:items-center max-md:gap-4 max-lg:flex-col max-lg:w-150 max-lg:items-center">
             <div className="bg-black p-6 overflow-hidden relative h-100 w-[50%] text-white max-lg:w-[100%]">
               <img 
                 src="/contact_vector.svg" 
                 alt="image" 
                 className="absolute right-0 top-0 w-[15rem]"
               />
-              <span className="text-5xl w-60 mt-45 inline-block pb-4">Let's Build The Future Together.</span>
+              <span className="text-5xl w-65 mt-45 inline-block pb-4 font-bold">Let's Build The Future Together.</span>
               <p className="text-[13px]">Get in touch and let June accelerate your business</p>
             </div>
 

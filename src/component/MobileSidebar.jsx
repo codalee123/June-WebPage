@@ -25,7 +25,10 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks }) => {
             <NavLink
               key={index}
               to={link.path}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                closeDropdown();
+                setMenuOpen(false)
+              }}
               className={({ isActive }) =>
                 `py-1 ${
                   isActive ? "text-purple-400 font-semibold" : "text-white"

@@ -88,7 +88,7 @@ const Solutions = () => {
               {/* Card-Section */}
             <div className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
               <Card3
-                icon={"/public/fintech.svg"}
+                icon={"/fintech.svg"}
                 title={"Fintech Infrastructure"}
                 desc={"Wallets, KYC/AML, payments, automation."}
               />

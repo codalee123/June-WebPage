@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MobileButton } from "../component/button";
+import ProductDropdownCard from "./ProductDropdownCard";
 
-const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks }) => {
+const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks,closeDropdown }) => {
+
+  const [productOpen, setProductOpen] = useState(false);
   return (
     <div
       className={`fixed top-0 left-0 z-999 h-full w-full sm:w-full bg-[rgba(32,17,60,1)] text-white px-3 py-6 transform transition-transform duration-300 max-lg:block hidden ${
@@ -14,31 +18,73 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks }) => {
         <img
           src="/close-menu.svg"
           className="w-6 cursor-pointer"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false)
+            closeDropdown()
+          }}
         />
       </div>
 
       {/* NAV LINKS */}
-     <section className="px-8 mt-10">
-        <nav className="flex flex-col gap-4 text-[24px] font-georama">
-          {navLinks.map((link, index) => (
+     <section className="px-3 mt-10 ">
+        <nav className="flex flex-col gap-3 text-[24px] font-georama">
+          {navLinks.map((link, index) => {
+          if (link.dropdown) {
+            return (
+              <div key={index}>
+                <button
+                  onClick={() => setProductOpen(!productOpen)}
+                  className="font-medium text-white  font-georama px-2  py-2 flex items-center gap-2 hover:text-gray-300"
+                >
+                  {link.name}
+                  <img 
+                    src="/dropdown.svg"
+                    className={`transition-transform duration-300 ${productOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+               {/* PRODUCT DROPDOWN */}
+        
+              {productOpen && (
+                <div className=" w-full flex justify-start  ">
+                  <ProductDropdownCard />
+                </div>
+              )}
+              </div>
+                    );
+                  }
+
+          return (
             <NavLink
               key={index}
               to={link.path}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                closeDropdown();
+                setMenuOpen(false)
+              }}
               className={({ isActive }) =>
-                `py-1 ${
-                  isActive ? "text-purple-400 font-semibold" : "text-white"
+                ` font-medium text-white font-georama px-2  py-1 ${
+                  isActive ? "text-purple-400 " : "text-white"
                 }`
               }
             >
               {link.name}
             </NavLink>
-          ))}
+          );
+        })}
+
         </nav>
 
+        {/* PRODUCT DROPDOWN */}
+{/*         
+              {productOpen && (
+                <div className="fixed top-[65px] left-0 w-full flex justify-center z-9999">
+                  <ProductDropdownCard />
+                </div>
+              )} */}
+
         {/* BUTTON */}
-        <div className="mt-4">
+        <div className="mt-4 ">
           <MobileButton text={"Get In Touch"} logo={"/arrow-right.svg"} />
         </div>
       </section>  

@@ -4,23 +4,28 @@ import { Link, NavLink } from 'react-router-dom'
 import { AppRoutes } from '../Utils/route'
 import {Button} from '../component/button'
 import MobileSidebar from './MobileSidebar'
+import ProductDropdownCard from './ProductDropdownCard'
 
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: AppRoutes.about },
   { name: "Solutions", path:AppRoutes.solutions },
-  { name: "Products", path: AppRoutes.products },
+  { name: "Products", path: null, dropdown:true },
   { name: "Contact", path: AppRoutes.contact },
 ];
 
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
+  const [productOpen, setProductOpen] = useState(false);
+  const closeDropdown = () => setProductOpen(false);
+
+
   return (
 
    <> 
       <nav className="fixed top-0 left-0 z-50 flex items-center justify-between w-full py-2 text-white bg-black/40 px-20 max-md:px-4 max-lg:px-10 backdrop-blur-md">
-        <Link to={AppRoutes.home}>
+        <Link to={AppRoutes.home} onClick={closeDropdown} >
           <section className="flex items-center font-bold ">
             <div className="overflow-hidden w-30 max-sm:w-25">
               <img src="/June-Logo.svg" className="w-full " />
@@ -31,20 +36,38 @@ const Navbar = () => {
         {/* NAV ITEMS — MAPPED */}
         <div className="max-lg:hidden flex items-center gap-6 text-white">
 
-          {navLinks.map((link, index) => (
+         {navLinks.map((link, index) => {
+          if (link.dropdown) {
+            return (
+              <button
+                key={index}
+                onClick={() => setProductOpen(!productOpen)}
+                className="font-medium text-white text-base font-georama px-4 py-2 flex items-center gap-2 hover:text-gray-300"
+              >
+                {link.name}
+                <img 
+                  src="/dropdown.svg"
+                  className={`transition-transform duration-300 ${productOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+                    );
+                  }
+
+          return (
             <NavLink
               key={index}
               to={link.path}
-              className={
-                ({ isActive }) =>
-                  `font-medium text-white text-base font-georama px-4 py-2 transition-colors ${
-                    isActive ? "bg-purple-500" : "hover:text-gray-300 "
-                  }`
-            }
+              onClick={closeDropdown}
+              className={({ isActive }) =>
+                `font-medium text-white text-base font-georama px-4 py-2 ${
+                  isActive ? "bg-[#a16afa]" : "hover:text-gray-300"
+                }`
+              }
             >
               {link.name}
             </NavLink>
-          ))}
+          );
+        })}
 
         </div>
 
@@ -66,11 +89,23 @@ const Navbar = () => {
 
         </a>
       </nav>  
+
+      {/* PRODUCT DROPDOWN */}
+
+      {productOpen && (
+        <div className="fixed top-[65px] left-0 w-full flex justify-center z-9999">
+          <ProductDropdownCard />
+        </div>
+      )}
+
       {/* MOBILE SIDEBAR COMPONENT */}
         <MobileSidebar
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
           navLinks={navLinks}
+          // productOpen={productOpen}
+          // setProductOpen={setProductOpen}
+          closeDropdown={closeDropdown}
         />
     </>
  

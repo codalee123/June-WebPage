@@ -2,6 +2,29 @@ import React from 'react'
 import { Card2, Card3 } from '../component/Card'
 import { ExploreWithButton} from '../pages/Explore'
 
+// import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+
+
+// const containerVariants = {
+//   hidden: { opacity: 0 },
+//   show: {
+//     opacity: 1,
+//     transition: {
+//       staggerChildren: 0.25, // animate one after the other
+//     },
+//   },
+// };
+
+// const cardVariants = {
+//   hidden: { opacity: 0, x: -60 }, // slide from left
+//   show: {
+//     opacity: 1,
+//     x: 0,
+//     transition: { duration: 0.6, ease: "easeOut" },
+//   },
+// };
+
 const Solutions = () => {
 
   const cards = [
@@ -33,12 +56,12 @@ const Solutions = () => {
         <div className=" h-screen   bg-[#141414] gap-20 max-lg:gap-10  max-lg:flex-col max-sm:py-20  relative flex px-20 max-sm:px-6 justify-center items-center  ">
       
           {/* Main Content */}
-          <section className=' w-full max-w-110 max-lg:max-w-full h-max text-start space-y-6  text-white'>
-            <div className="text-5xl font-black  font-inter max-md:text-[38px] max-lg:text-6xl lg:leading-[50px]">
+          <section className=' w-full max-w-130 max-lg:max-w-full h-max text-start space-y-6  text-white'>
+            <div className="text-7xl  font-extrabold  font-inter max-md:text-[39px] max-lg:text-6xl lg:leading-[70px] max-md:leading-13">
               One Platform. Infinite Possibilities.
             </div>
 
-            <p className='text-[14px] max-md:text-base font-inter font-normal pb-8 text-[#fdf9f0]'>
+            <p className='text-base max-md:text-base font-inter font-normal pb-8 text-[#fdf9f0]'>
               June delivers infrastructure that adapts to your business, so you can focus on growth and customers.
             </p>
 
@@ -111,6 +134,32 @@ const Solutions = () => {
                 desc={"Flagship verticals (Skygrit → aviation)."}
               />
             </div>
+
+            {/* Observer
+                {(() => {
+                  const { ref, inView } = useInView({
+                    triggerOnce: true,
+                    threshold: 0.2, // start animation when 20% is visible
+                  });
+
+                  return (
+                    <motion.div
+                      ref={ref}
+                      variants={containerVariants}
+                      initial="hidden"
+                      animate={inView ? "show" : "hidden"}
+                      className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+                    >
+                      <Card3 icon={"/fintech.svg"} title={"Fintech Infrastructure"} desc={"Wallets, KYC/AML, payments, automation."} />
+
+                      <Card3 icon={"/commerce.svg"} title={"Commerce Infrastructure"} desc={"Catalogs, checkout, logistics, CRM."} />
+
+                      <Card3 icon={"/compliance.svg"} title={"Compliance & Security"} desc={"Enterprise-grade privacy, encryption, and data sovereignty."} />
+
+                      <Card3 icon={"/industry.svg"} title={"Industry Verticals"} desc={"Flagship verticals (Skygrit → aviation)."} />
+                    </motion.div>
+                  );
+                })()} */}
          </section>    
 
         <ExploreWithButton 

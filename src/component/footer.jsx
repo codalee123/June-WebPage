@@ -99,7 +99,15 @@ const Footer = () => {
                 <span className="border-b-2 border-[#a16afa] w-12 block "></span>
                 <span className='font-semibold text-[12px]'>EMAIL</span>
               </div>
-              <p className='text-[20px] font-normal max-lg:text-base max-md:text-2xl'>info@juneinfra.com</p>
+
+               <a 
+                href='https://www.bing.com/search?pglt=297&q=info%40juneinfra.com&cvid=89dc6d373e0d40a0865f4a64fb423fe7&gs_lcrp=EgRlZGdlKgYIABBFGDsyBggAEEUYOzIGCAEQRRg60gEHNzU4ajBqMagCALACAA&FORM=ANNTA1&PC=U531'
+                target='_blank' rel="noopener noreferrer" className='cursor-pointer'
+              >
+                <p className='text-[20px] hover:text-[#a16afa] font-normal max-lg:text-base max-md:text-2xl'>
+                  info@juneinfra.com
+                </p>
+              </a>
             </div>
 
             <div>
@@ -107,7 +115,14 @@ const Footer = () => {
                 <span className="border-b-2 border-[#a16afa] w-12 block"></span>
                 <span className='font-semibold text-[12px]'>PARTNERSHIP</span>
               </div>
-              <p className='text-[20px] font-normal max-lg:text-base max-md:text-2xl'>partnerships@juneinfra.com</p>
+              <a 
+                href='https://www.bing.com/search?pglt=297&q=partnerships%40juneinfra.com&cvid=0dfea972650842d39a53e1bd933b2659&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg6MgYIAhBFGDzSAQgxMDk2ajBqMagCALACAA&FORM=ANNTA1&PC=U531'
+                target='_blank' rel="noopener noreferrer" className='cursor-pointer'
+              >
+                <p className='text-[20px] hover:text-[#a16afa] font-normal max-lg:text-base max-md:text-2xl'>
+                  partnerships@juneinfra.com
+                </p>
+              </a>
             </div>
 
              <div>

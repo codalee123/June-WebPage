@@ -1,5 +1,5 @@
 import React from 'react'
-
+// import { motion } from "framer-motion";
 const Card = ({icon,number,title,desc}) => {
 
   return (
@@ -75,7 +75,7 @@ export const Card2 =({icon,role,title,desc})=>{
 
 export const Card3 = ({icon,title,desc})=>{
   return(
-    <div className="w-full h-48 bg-[#fbf8ff] rounded-lg  flex flex-col  p-6 relative ">
+    <div className="w-full h-48 bg-[#fbf8ff] cursor-pointer hover:shadow-md rounded-lg  flex flex-col  p-6 relative ">
 
       {/* Icon top-right */}
         <img
@@ -98,3 +98,36 @@ export const Card3 = ({icon,title,desc})=>{
     </div>
   )
 }
+
+
+// const cardVariants = {
+//   hidden: { opacity: 0, x: -60 }, // slide in from left
+//   show: {
+//     opacity: 1,
+//     x: 0,
+//     transition: { duration: 0.6, ease: "easeOut" },
+//   },
+// };
+
+// export const Card3 = ({ icon, title, desc }) => {
+//   return (
+//     <motion.div
+//       variants={cardVariants}
+//       className="w-full h-48 bg-[#fbf8ff] rounded-lg flex flex-col p-6 relative"
+//     >
+//       {/* Icon top-left */}
+//       <img
+//         src={icon}
+//         alt="icon"
+//         className="absolute top-4 w-12 h-12 left-6"
+//       />
+
+//       <div className="text-start my-15">
+//         <h3 className="text-[18px] font-bold mt-1">{title}</h3>
+//         <p className="text-[#64728f] text-[13px] font-normal mt-3 leading-relaxed">
+//           {desc}
+//         </p>
+//       </div>
+//     </motion.div>
+//   );
+// };

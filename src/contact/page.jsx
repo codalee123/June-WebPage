@@ -11,8 +11,8 @@ const Contact = () => {
           Contact Us
         </h1>
 
-        <section className="flex bg-white gap-6 justify-self-center w-290 max-md:flex-col max-md:w-[380px] max-md:items-center max-md:gap-4 max-lg:flex-col max-lg:w-150 max-lg:items-center">
-            <div className="bg-black p-6 overflow-hidden relative h-100 w-[50%] text-white max-lg:w-full">
+        <section className="flex h-max gap-6 justify-self-center w-290 max-md:flex-col max-md:w-[380px] max-md:items-center max-md:gap-4 max-lg:flex-col max-lg:w-150 max-lg:items-center">
+            <div className="bg-black p-6 overflow-hidden relative h-full w-[50%] text-white max-lg:w-full">
               <img 
                 src="/contact_vector.svg" 
                 alt="image" 
@@ -24,7 +24,7 @@ const Contact = () => {
               <p className="text-[13px]">Get in touch and let June accelerate your business</p>
             </div>
 
-            <form className="flex flex-col gap-4 px-10 pt-15 font-light text-[#939393] w-[50%] max-md:pt-6 max-md:px-6 max-md:pb-10 max-lg:pt-6 max-lg:w-full">
+            <form className="flex flex-col gap-6 px-10 pt-10 font-light text-[#939393] w-[50%] max-md:pt-6 max-md:px-6 max-md:pb-10 max-lg:pt-6 max-lg:w-full">
               <div>
                 <label htmlFor="name">First Name</label>
                 <input
@@ -51,7 +51,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="bg-[rgba(161,106,250,1)] py-2 px-4 text-white w-max text-[12px] max-lg:my-4">Submit</button>
+              <button type="submit" className="bg-[rgba(161,106,250,1)] font-semibold py-3 px-8 text-white w-max text-[12px] max-lg:my-4">Submit</button>
 
             </form>
         </section>

@@ -59,29 +59,25 @@ const About = () => {
 
      <div className="grid grid-cols-4 gap-10 w-full max-w-250 py-20 max-md:grid-cols-1 max-md:w-[350px] max-lg:grid-cols-2 max-lg:w-[650px]">
        <CorePillars 
-        imgBg={"bg-[rgba(166,26,230,0.1)]"}
-        imgPath={"/about_speed.svg"}
+        imgPath={"/Speed.svg"}
         title={"Speed"}
         text={"Launch products in weeks not months."}
         cardBg="bg-[rgba(244,246,246,1)]"
        />
        <CorePillars 
-        imgBg={"bg-[rgba(12,166,60,0.1)]"}
-        imgPath={"/about_affordability.svg"}
+        imgPath={"/Affordability.svg"}
         title={"Affordability"}
         text={"Cut dev and infrastructure costs by 60-70%."}
         cardBg="bg-[rgba(244,246,246,1)]"
        />
        <CorePillars 
-        imgBg={"bg-[rgba(37,99,235,0.1)]"}
-        imgPath={"/about_scalability.svg"}
+        imgPath={"/Scalability.svg"}
         title={"Scalability"}
         text={"From MVP to enterprise, grow without rebuilding."}
         cardBg="bg-[rgba(244,246,246,1)]"
        />
        <CorePillars 
-        imgBg={"bg-[rgba(230,12,12,0.1)]"}
-        imgPath={"/about_trust.svg"}
+        imgPath={"/Trust.svg"}
         title={"Trust"}
         text={"Compliance and security at every layer."}
         cardBg="bg-[rgba(244,246,246,1)]"

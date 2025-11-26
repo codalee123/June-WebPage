@@ -30,18 +30,35 @@ const Card = ({icon,number,title,desc}) => {
 
 export default Card
 
-export const CorePillars = ({imgBg, imgPath, title, text, cardBg="bg-white"}) => {
+// ABOUT CARD
+export const CorePillars = ({ imgPath, title, text, cardBg="bg-white", imageSz="w-15"}) => {
  return(
-  <section className={`${cardBg} rounded-md flex flex-col items-center text-center px-6 py-4 gap-2.5`}>
-    <div className={`${imgBg} rounded-[50%] h-12 justify-center flex items-center w-12`}>
-      <img src={imgPath} alt='vectorImg' />
-    </div>
+  <section className={`${cardBg} font-inter rounded-md flex flex-col items-center text-center px-6 py-4 gap-2.5`}>
+
+    <img src={imgPath} alt='vectorImg' className={`${imageSz}`} />
 
     <h1 className='font-bold text-l'>{title}</h1>
     <span className='text-gray-600 text-[13px]'>{text}</span>
   </section>
  )
 }
+
+// CONTACT-CARD
+
+export const ContactCard = ({ imgPath, title, text, cardBg="bg-white", imageSz="w-20"}) => {
+ return(
+  <section className={`${cardBg} font-inter font-normal rounded-lg flex flex-col items-center text-center px-8 pt-4  pb-15 gap-8`}>
+
+    <img src={imgPath} alt='vectorImg' className={`${imageSz} `} />
+
+    <div className='flex flex-col gap-3'>
+      <span className='font-bold text-2xl'>{title}</span>
+      <span className='text-[#121212] text-[24px]'>{text}</span>
+    </div>
+  </section>
+ )
+}
+
 
 export const Card2 =({icon,role,title,desc})=>{
   return (

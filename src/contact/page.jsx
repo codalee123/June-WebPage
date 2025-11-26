@@ -1,17 +1,17 @@
 // import { useState } from 'react'
 
-import { CorePillars } from "../component/Card"
+import { ContactCard} from "../component/Card"
 import { ExploreWithButton } from "../pages/Explore"
 
 const Contact = () => {
   return (
     <>
-    <div className="bg-[rgba(161,106,250,0.1)] pb-20 pt-10 font-inter px-20 max-md:px-6 h-screen max-md:h-max max-md:pb-8">
+    <div className="bg-[rgba(161,106,250,0.1)] pb-20 pt-10 font-inter px-20 max-lg:px-10 max-md:px-6 max-md:h-max max-md:pb-8">
         <h1 className="text-7xl font-inter text-black my-15 font-black  max-md:text-6xl">
           Contact Us
         </h1>
 
-        <section className="flex h-max gap-6 justify-self-center w-290 max-md:flex-col max-md:w-[380px] max-md:items-center max-md:gap-4 max-lg:flex-col max-lg:w-150 max-lg:items-center">
+        <section className="flex  h-max gap-0 justify-self-center w-full max-md:flex-col max-md:w-[380px] max-md:items-center max-md:gap-4 max-lg:flex-col max-lg:w-200 max-lg:items-center ">
             <div className="bg-black p-6 overflow-hidden relative h-full w-[50%] text-white max-lg:w-full">
               <img 
                 src="/contact_vector.svg" 
@@ -24,7 +24,7 @@ const Contact = () => {
               <p className="text-[13px]">Get in touch and let June accelerate your business</p>
             </div>
 
-            <form className="flex flex-col gap-6 px-10 pt-10 font-light text-[#939393] w-[50%] max-md:pt-6 max-md:px-6 max-md:pb-10 max-lg:pt-6 max-lg:w-full">
+            <form className="flex flex-col bg-white gap-6 px-10 pt-10 font-light text-[#939393] w-[50%] max-md:pt-6 max-md:px-6 max-md:pb-10 max-lg:pt-6 max-lg:w-full">
               <div>
                 <label htmlFor="name">First Name</label>
                 <input
@@ -55,28 +55,28 @@ const Contact = () => {
 
             </form>
         </section>
-      </div>
 
-        <div className="grid grid-cols-3 py-12 px-25 gap-12 bg-[rgba(161,106,250,0.1)] max-md:grid-cols-1 max-md:px-15 max-md:py-6 max-lg:grid-cols-1">
-              <CorePillars
-                imgBg={"bg-[rgba(161,106,250,1)]"}
-                imgPath={"/contact_message.svg"}
+        <div className="grid grid-cols-3 mt-20 max-md:mt-5 px-0 gap-5 max-md:grid-cols-1 max-md:px-0 max-md:py-6 max-lg:grid-cols-1">
+              <ContactCard
+                imgPath={"/Email.svg"}
                 title={"Email"}
                 text={"info@juneinfra.com"}
               />
-              <CorePillars
-                imgBg={"bg-[rgba(161,106,250,1)]"}
-                imgPath={"/contact_message.svg"}
+              <ContactCard
+                imgPath={"/Email.svg"}
                 title={"Partnership"}
                 text={"partnership@juneinfra.com"}
               />
-              <CorePillars
-                imgBg={"bg-[rgba(161,106,250,1)]"}
-                imgPath={"/contact_phone.svg"}
-                title={"Contact"}
+              <ContactCard
+                imgPath={"/Phone.svg"}
+                title={"Phone Number"}
                 text={"+2348031234567"}
               />
             </div>
+
+      </div>
+
+        
 
             <ExploreWithButton
               text={"Ready to Get Started?"}

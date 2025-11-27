@@ -6,11 +6,11 @@ const Built = () => {
       <div className='h-max px-20  py-8 max-lg:px-8 max-md:px-6  '>
 
         {/* Content-section */}
-        <header className=' max-w-120 max-md:max-w-80 '>
+        <header className=' max-w-125 max-md:max-w-80'>
           <p className='text-[33px] text-black font-black leading-[38px] max-md:text-[26px] max-md:leading-7  '>
             Built for Founders, SMEs, and Enterprises
           </p>
-          <p className='font-light text-[13px] max-md:text-[15px] max-md:leading-7 mt-4'>
+          <p className='font-normal text-[15px] max-md:text-[15px] max-md:leading-7 mt-4'>
             A unified cloud platform designed to accelerate startups, strengthen growing businesses, and support enterprise-level performance.
           </p>
         </header>

@@ -76,7 +76,7 @@ const WhyJune = () => {
               <p className='text-start text-5xl font-black cursor-pointer text-white leading-15 mt-9'>
                 Our <br />
                 Major <br />
-                Higlights
+                Highlights
               </p>
             </div>
 

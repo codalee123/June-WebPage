@@ -65,12 +65,12 @@ const Contact = () => {
               <ContactCard
                 imgPath={"/Email.svg"}
                 title={"Partnership"}
-                text={"partnership@juneinfra.com"}
+                text={"partnerships@juneinfra.com"}
               />
               <ContactCard
                 imgPath={"/Phone.svg"}
                 title={"Phone Number"}
-                text={"+2348031234567"}
+                text={"+234(0)7050247379"}
               />
             </div>
 

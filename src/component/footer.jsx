@@ -90,8 +90,8 @@ const Footer = () => {
             {/* JUNE-SECTION */}
           <div className=' w-full text-white flex justify-between gap-10 max-md:flex-col-reverse            max-md:items-start  items-center'>
             <div>
-              <p className='font-light mb-3 text-[10px]'>© Copyright 2025 June Infrastructure Technology Limited</p>
-              <img src="/June-Logo.svg" alt="" className='w-40 max-lg:w-30 ' />
+              <p className='font-normal mb-3 text-[12px]'>© Copyright 2025 June Infrastructure Technology Limited</p>
+              <a href="#"><img src="/June-Logo.svg" alt="" className='w-40 max-lg:w-30 ' /></a>
             </div>
 
             <div>
@@ -101,7 +101,7 @@ const Footer = () => {
               </div>
 
                <a 
-                href='https://www.bing.com/search?pglt=297&q=info%40juneinfra.com&cvid=89dc6d373e0d40a0865f4a64fb423fe7&gs_lcrp=EgRlZGdlKgYIABBFGDsyBggAEEUYOzIGCAEQRRg60gEHNzU4ajBqMagCALACAA&FORM=ANNTA1&PC=U531'
+                href='https://info@juneinfra.com'
                 target='_blank' rel="noopener noreferrer" className='cursor-pointer'
               >
                 <p className='text-[20px] hover:text-[#a16afa] font-normal max-lg:text-base max-md:text-2xl'>
@@ -116,7 +116,7 @@ const Footer = () => {
                 <span className='font-semibold text-[12px]'>PARTNERSHIP</span>
               </div>
               <a 
-                href='https://www.bing.com/search?pglt=297&q=partnerships%40juneinfra.com&cvid=0dfea972650842d39a53e1bd933b2659&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg6MgYIAhBFGDzSAQgxMDk2ajBqMagCALACAA&FORM=ANNTA1&PC=U531'
+                href='https://partnerships@juneinfra.com'
                 target='_blank' rel="noopener noreferrer" className='cursor-pointer'
               >
                 <p className='text-[20px] hover:text-[#a16afa] font-normal max-lg:text-base max-md:text-2xl'>

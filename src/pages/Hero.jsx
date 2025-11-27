@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-      <div
+      <div id="/"
       className=" h-screen  bg-[#141414] relative flex  items-center justify-center "
      
       >

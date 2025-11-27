@@ -68,7 +68,7 @@ const Testimony = () => {
                   />
 
                   {/* Text */}
-                  <p className="text-black text-[12px] font-light leading-relaxed mb-6">
+                  <p className="text-black text-[12px] font-normal leading-relaxed mb-4">
                     {item.text}
                   </p>
 

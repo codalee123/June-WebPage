@@ -4,9 +4,9 @@ import { ExploreWithButton, ExploreWithoutButton } from "../pages/Explore";
 
 const About = () => {
  return (
-  <div className="overflow-hidden">
+  <div className="overflow-hidden font-inter">
    <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-start max-lg:items-center max-lg:gap-10">
-    <div className="text-6xl w-120 h-max text-white font-bold font-inter max-md:text-3xl max-md:pt-20 max-md:w-75 max-lg:text-6xl max-lg:pt-30 max-lg:w-150">
+    <div className="text-6xl w-120 h-max text-white font-extrabold  max-md:text-3xl max-md:pt-20 max-md:w-75 max-lg:text-6xl max-lg:pt-30 max-lg:w-150">
      Africa's <br /> Cloud Backbone for Builders and Businesses
     </div>
     <div className="h-100 w-120 max-md:h-75 max-md:w-80 max-lg:w-135 max-lg:h-90">
@@ -57,33 +57,37 @@ const About = () => {
        </article>
      </div>
 
-     <div className="grid grid-cols-4 gap-10 w-full max-w-250 py-20 max-md:grid-cols-1 max-md:w-[350px] max-lg:grid-cols-2 max-lg:w-[650px]">
-       <CorePillars 
-        imgPath={"/Speed.svg"}
-        title={"Speed"}
-        text={"Launch products in weeks not months."}
-        cardBg="bg-[rgba(244,246,246,1)]"
-       />
-       <CorePillars 
-        imgPath={"/Affordability.svg"}
-        title={"Affordability"}
-        text={"Cut dev and infrastructure costs by 60-70%."}
-        cardBg="bg-[rgba(244,246,246,1)]"
-       />
-       <CorePillars 
-        imgPath={"/Scalability.svg"}
-        title={"Scalability"}
-        text={"From MVP to enterprise, grow without rebuilding."}
-        cardBg="bg-[rgba(244,246,246,1)]"
-       />
-       <CorePillars 
-        imgPath={"/Trust.svg"}
-        title={"Trust"}
-        text={"Compliance and security at every layer."}
-        cardBg="bg-[rgba(244,246,246,1)]"
-       />
-      
-     </div>
+       {/* Core Pillars  */}
+      <div className=" py-20 gap-8 flex flex-col">
+        <p className="font-bold text-4xl text-center">Core Pillars</p>
+        <div className="grid grid-cols-4 gap-10 w-full max-w-250  max-md:grid-cols-1 max-md:w-[350px] max-lg:grid-cols-2 max-lg:w-[650px]">
+          <CorePillars 
+            imgPath={"/Speed.svg"}
+            title={"Speed"}
+            text={"Launch products in weeks not months."}
+            cardBg="bg-[rgba(244,246,246,1)]"
+          />
+          <CorePillars 
+            imgPath={"/Affordability.svg"}
+            title={"Affordability"}
+            text={"Cut dev and infrastructure costs by 60-70%."}
+            cardBg="bg-[rgba(244,246,246,1)]"
+          />
+          <CorePillars 
+            imgPath={"/Scalability.svg"}
+            title={"Scalability"}
+            text={"From MVP to enterprise, grow without rebuilding."}
+            cardBg="bg-[rgba(244,246,246,1)]"
+          />
+          <CorePillars 
+            imgPath={"/Trust.svg"}
+            title={"Trust"}
+            text={"Compliance and security at every layer."}
+            cardBg="bg-[rgba(244,246,246,1)]"
+          />
+          
+        </div>
+      </div>  
    </section>
 
    <ExploreWithoutButton

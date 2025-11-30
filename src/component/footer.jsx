@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { AppRoutes } from '../Utils/route';
 
 const Footer = () => {
 
@@ -8,7 +10,7 @@ const Footer = () => {
     <>
       <footer className=' bg-[#000000]'>
 
-        <section className='w-full  px-20 py-10 h-max flex max-lg:px-8 max-md:px-6 max-md:py-15 gap-20 flex-col   '>
+        <section className='w-full px-20  py-10 h-max flex max-lg:px-8 max-md:px-6 max-md:py-15 gap-20 flex-col   '>
           <div className=' w-full h-full flex gap-[20%] max-md:gap-15 max-md:flex-col max-lg:gap-[8%] '>
             <div className='text-white w-[35%] max-md:w-full max-lg:w-[50%] '>
               <h1 className='font-extrabold text-[35px] max-md:text-3xl leading-9 '>
@@ -46,17 +48,17 @@ const Footer = () => {
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8  w-[45%] '>
                   PRODUCT
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href=""  className='hover:text-[#a16afa] w-max'>Solutions</a>
-                    <a href=""  className='hover:text-[#a16afa] w-max'>Skygrit</a>
-                    <a href=""  className='hover:text-[#a16afa] w-max'>Developers</a>
+                    <NavLink to={AppRoutes.solutions} onClick={() => window.scrollTo(0, 0)}  className='hover:text-[#a16afa] w-max'>Solutions</NavLink>
+                    <NavLink  className='hover:text-[#a16afa] w-max'>Skygrit</NavLink>
+                    <NavLink className='hover:text-[#a16afa] w-max'>Developers</NavLink>
                   </div>
                 </div>
 
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8 w-[45%] '>
                   RESOURCES
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href="" className='hover:text-[#a16afa] w-max'>What’s new?</a>
-                    <a href="" className='hover:text-[#a16afa] w-max'>Blogs</a>
+                    <NavLink className='hover:text-[#a16afa] w-max'>What’s new?</NavLink>
+                    <NavLink className='hover:text-[#a16afa] w-max'>Blogs</NavLink>
                   </div>
                 </div>
                 
@@ -68,18 +70,26 @@ const Footer = () => {
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8  w-[45%] '>
                   COMPANY
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href="" className='hover:text-[#a16afa] w-max '>About Us</a>
-                    <a href=""className='hover:text-[#a16afa] w-max '>Careers</a>
-                    <a href="" className='hover:text-[#a16afa] w-max'>Events</a>
+                    <NavLink to={AppRoutes.about}
+                      onClick={() => window.scrollTo(0, 0)}
+                     className='hover:text-[#a16afa] w-max '>
+                      About Us
+                    </NavLink>
+                    <NavLink href=""className='hover:text-[#a16afa] w-max '>Careers</NavLink>
+                    <NavLink href="" className='hover:text-[#a16afa] w-max'>Events</NavLink>
                   </div>
                 </div>
 
                 <div className='text-white text-[12px] font-medium border-l-2 border-[#a16afa] pl-8 w-[45%] max-md:pl-6  '>
                   SUPPORT
                   <div className='flex flex-col text-base pt-2 font-light leading-7 '>
-                    <a href="" className='hover:text-[#a16afa] w-max '>Contact Us</a>
-                    <a href="" className='hover:text-[#a16afa] w-max'>Privacy Policy</a>
-                    <a href="" className='hover:text-[#a16afa] w-max'>Terms of Service</a>
+                    <NavLink to={AppRoutes.contact}
+                      onClick={() => window.scrollTo(0, 0)}
+                       className='hover:text-[#a16afa] w-max '>
+                        Contact Us
+                    </NavLink>
+                    <NavLink className='hover:text-[#a16afa] w-max'>Privacy Policy</NavLink>
+                    <NavLink className='hover:text-[#a16afa] w-max'>Terms of Service</NavLink>
                   </div>
                 </div>
                 
@@ -88,10 +98,15 @@ const Footer = () => {
           </div>
             
             {/* JUNE-SECTION */}
-          <div className=' w-full text-white flex justify-between gap-10 max-md:flex-col-reverse            max-md:items-start  items-center'>
+          <div className=' w-full text-white flex justify-between gap-10 max-md:flex-col-reverse max-md:items-start  items-center'>
             <div>
-              <p className='font-normal mb-3 text-[12px]'>© Copyright 2025 June Infrastructure Technology Limited</p>
-              <a href="#"><img src="/June-Logo.svg" alt="" className='w-40 max-lg:w-30 ' /></a>
+              <p className='font-normal mb-3 text-[12px]'>
+                © Copyright 2025 June Infrastructure Technology Limited
+              </p>
+
+              <NavLink onClick={() => window.scrollTo(0, 0)}>
+                <img src="/June-Logo.svg" alt="" className='w-40 max-lg:w-30 ' />
+              </NavLink>
             </div>
 
             <div>
@@ -101,7 +116,7 @@ const Footer = () => {
               </div>
 
                <a 
-                href='https://info@juneinfra.com'
+                href='mailto:info@juneinfra.com'
                 target='_blank' rel="noopener noreferrer" className='cursor-pointer'
               >
                 <p className='text-[20px] hover:text-[#a16afa] font-normal max-lg:text-base max-md:text-2xl'>
@@ -109,14 +124,13 @@ const Footer = () => {
                 </p>
               </a>
             </div>
-
             <div>
               <div className='flex  items-center gap-3 '>
                 <span className="border-b-2 border-[#a16afa] w-12 block"></span>
                 <span className='font-semibold text-[12px]'>PARTNERSHIP</span>
               </div>
               <a 
-                href='https://partnerships@juneinfra.com'
+                href='mailto:partnerships@juneinfra.com'
                 target='_blank' rel="noopener noreferrer" className='cursor-pointer'
               >
                 <p className='text-[20px] hover:text-[#a16afa] font-normal max-lg:text-base max-md:text-2xl'>

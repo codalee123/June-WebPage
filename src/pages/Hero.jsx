@@ -3,20 +3,33 @@ import React from 'react'
 const Hero = () => {
   return (
       <div id="/"
-      className=" h-screen  bg-[#141414] relative flex  items-center justify-center "
+      className=" h-max  bg-[#141414] relative flex  items-center justify-center "
      
       >
 
-        <div className='h-max py-50 flex flex-col justify-center text-center'>
+{/* 
+          <div className='bg-amber-300 absolute  inset-0 z-0'
+            style={{
+              backgroundImage: 'url("/Plug.svg")',
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "bottom ",
+          
+            }} 
+          >
+            
+          </div> */}
+
+        <div className='h-max pb-50 pt-30 max-md:pb-30 flex flex-col justify-center text-center'>
           {/* Main Content */}
-          <section className=' w-full max-w-5xl space-y-4  text-white'>
-            <div className="text-9xl font-black  font-inter max-md:text-5xl max-lg:text-8xl lg:leading-[100%]">
+          <section className='w-full max-w-5xl space-y-4  text-white'>
+            <div className="text-9xl font-black lg:leading-[100%] font-inter max-lg:text-8xl max-md:text-[45px] ">
               Powering <br />
               Africa’s Digital <br />
               Future
             </div>
 
-            <p className='text-[16px] font-inter font-normal pb-8'>
+            <p className='text-base font-inter font-normal pb-8'>
               Build, launch, and scale your business with June
             </p>
 
@@ -31,21 +44,26 @@ const Hero = () => {
               Start Building
             </button>
           </article>
+
         </div>  
 
-        <div className='absolute h-full inset-0 bottom-0'
-            style={{
-              backgroundImage: 'url("/Plug.svg")',
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "bottom ",
-              overflow: "hidden"
-          
-            }}
-          >
-            
-          </div>
-        
+        {/* 🔌 Background Image */}
+        <img
+          src="/Plug.svg"
+          alt="plug background"
+          className="
+            absolute
+            w-full 
+            h-max
+            object-contain
+            object-bottom
+            pointer-events-none
+            z-0
+            bottom-0
+            max-md:object-cover
+            max-md:h-[55%]
+          "
+        />        
       </div>
   )
 }

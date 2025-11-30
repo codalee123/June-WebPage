@@ -5,12 +5,12 @@ import { ExploreWithButton, ExploreWithoutButton } from "../pages/Explore";
 const About = () => {
  return (
   <div className="overflow-hidden font-inter">
-   <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-start max-lg:items-center max-lg:gap-10">
+   <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-center max-lg:gap-10">
     <div className="text-6xl w-120 h-max text-white font-extrabold  max-md:text-3xl max-md:pt-20 max-md:w-75 max-lg:text-6xl max-lg:pt-30 max-lg:w-150">
      Africa's <br /> Cloud Backbone for Builders and Businesses
     </div>
     <div className="h-100 w-120 max-md:h-75 max-md:w-80 max-lg:w-135 max-lg:h-90">
-     <img src="/about_hero.svg" alt="hero_img" />
+     <img src="/about_hero.svg" alt="" />
     </div>
    </section>
 
@@ -19,10 +19,10 @@ const About = () => {
      <div className="flex flex-col py-10 pl-10 w-145 gap-8 max-md:w-85 max-md:pl-4 max-lg:gap-15 max-lg:w-150">
       <div>
        <div className="flex items-center gap-2">
-        <span className="border-[#a16afa] w-8 border-b-2 inline-block"></span>{" "}
-        OUR MISSION{" "}
+        <span className="border-[#a16afa] w-8 border-b-2 inline-block font-black"></span>{" "}
+        <span className="font-bold">OUR MISSION{" "}</span>
        </div>
-       <p className="font-bold pl-10 max-md:text-[12px] max-md:w-[19rem] max-lg:text-[17.5px]">
+       <p className="pl-10 max-md:text-[12px] max-md:w-[19rem] max-lg:text-[17.5px]">
         Provide founders and businesses with secure, high performance digital
         infrastructure to build, launch, and scale their businesses without
         starting from scratch.
@@ -30,10 +30,10 @@ const About = () => {
       </div>
       <div>
        <div className="flex items-center gap-2">
-        <span className="border-[#a16afa] w-8 border-b-2 inline-block"></span>{" "}
-        OUR VISION{" "}
+        <span className="border-[#a16afa] w-8 border-b-2 inline-block font-bold"></span>{" "}
+        <span className="font-bold">OUR VISION{" "}</span>
        </div>
-       <p className="font-bold pl-10 max-md:text-[12px] max-md:w-[19rem] max-lg:text-[17.5px]">
+       <p className="pl-10 max-md:text-[12px] max-md:w-[19rem] max-lg:text-[17.5px]">
         To power Africa’s future by providing the scalable technology
         infrastructure every founder, small business, and enterprise needs to
         thrive.

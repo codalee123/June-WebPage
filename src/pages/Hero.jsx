@@ -7,10 +7,10 @@ const Hero = () => {
      
       >
 
-        <div className='h-max  flex flex-col justify-center text-center'>
+        <div className='h-max py-50 flex flex-col justify-center text-center'>
           {/* Main Content */}
           <section className=' w-full max-w-5xl space-y-4  text-white'>
-            <div className="text-9xl font-black  font-inter max-md:text-5xl max-lg:text-8xl lg:leading-[100px]">
+            <div className="text-9xl font-black  font-inter max-md:text-5xl max-lg:text-8xl lg:leading-[100%]">
               Powering <br />
               Africa’s Digital <br />
               Future

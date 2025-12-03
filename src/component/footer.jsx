@@ -35,7 +35,7 @@ const Footer = () => {
                   alert(`${ email} You've Succefully Subscribe to the Newsletter , click ok to continue and check your mail`);
                 }}
                 >
-                  Subscibe
+                  Subscribe
                 </button>
               </div>
 

@@ -53,10 +53,10 @@ const Solutions = () => {
   ]
   return (
       <>
-        <div className=" h-screen   bg-[#141414] gap-20 max-lg:gap-10  max-lg:flex-col max-sm:py-20  relative flex px-20 max-sm:px-6 justify-center items-center  ">
+        <div className=" h-screen bg-[#141414] gap-25 max-lg:gap-10 max-lg:h-248 max-lg:flex-col max-sm:py-20 relative flex px-20 max-sm:px-6 justify-center items-center">
       
           {/* Main Content */}
-          <section className=' w-full max-w-130 max-lg:max-w-full h-max text-start space-y-6  text-white'>
+          <section className=' w-full max-w-140 max-lg:max-w-full max-lg:pt-5 h-max text-start space-y-6  text-white'>
             <div className="text-7xl  font-extrabold  font-inter max-md:text-[39px] max-lg:text-6xl lg:leading-[70px] max-md:leading-13">
               One Platform. Infinite Possibilities.
             </div>
@@ -88,7 +88,7 @@ const Solutions = () => {
         </div>  
 
         {/* Card-box */}
-        <div className="flex flex-wrap px-20 max-lg:px-6 gap-6 my-10">
+        <div className="flex flex-wrap px-20 max-lg:px-6 max-lg:gap-6 gap-10 max-md:gap-6 my-10">
 
         {/* Cards */}
             {cards.map((card) => (

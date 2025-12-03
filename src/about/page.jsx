@@ -5,7 +5,7 @@ import { ExploreWithButton, ExploreWithoutButton } from "../pages/Explore";
 const About = () => {
  return (
   <div className="overflow-hidden font-inter">
-   <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:flex-col max-lg:items-center max-lg:gap-10">
+   <section className="bg-[#141414] relative w-full h-screen flex gap-20 px-25 items-center max-md:w-screen max-md:px-10 max-md:gap-15 max-md:pb-20 max-md:h-max max-lg:h-248 max-lg:flex-col max-lg:items-center max-lg:gap-10">
     <div className="text-6xl w-120 h-max text-white font-extrabold  max-md:text-3xl max-md:pt-20 max-md:w-75 max-lg:text-6xl max-lg:pt-30 max-lg:w-150">
      Africa's <br /> Cloud Backbone for Builders and Businesses
     </div>
@@ -49,7 +49,7 @@ const About = () => {
        </div>
        <article className="w-[20rem] text-[11px] text-gray-600 max-lg:text-[13px]">
          <h1 className="font-bold text-2xl text-black">Our Story</h1>
-         <p>June was born from a simple truth. Founders and businesses spend too much time and money building core digital infrastructure, including but no limited to payments, identity, workflows, CRM, and compliance. Core systems should accelerate growth, enable scaling and let you focus on your customers.</p>
+         <p>June was born from a simple truth. Founders and businesses spend too much time and money building core digital infrastructure, including but not limited to payments, identity, workflows, CRM, and compliance. Core systems should accelerate growth, enable scaling and let you focus on your customers.</p>
 
          <p className="mt-4">
            June is a cloud-native platform that acts as the invisible CTO for Africa's businesses. Launch any venture with ready-made  APIs, plug and play modules and enterprise-grade security, so you can scale confidently and delight your customers, without rebuilding core infrastructure.

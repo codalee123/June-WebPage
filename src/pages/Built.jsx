@@ -16,7 +16,7 @@ const Built = () => {
         </header>
 
         {/* Image-section */}
-        <div className="flex flex-wrap w-full gap-0 justify-center my-10">
+        <div className="flex flex-wrap w-full gap-0 justify-center my-10 max-md:gap-y-5">
           <div className="max-md:w-[50%] rounded-lg max-lg:w-[20%] w-[20%]">
             <img src="/founder2.svg" alt="" />
           </div>
@@ -28,7 +28,7 @@ const Built = () => {
             />
           </div>
 
-          <div className="max-md:w-[50%] rounded-lg max-lg:w-[20%] w-[20%] ">
+          <div className="-ml-14 max-md:w-[50%] max-md:ml-0 rounded-lg max-lg:w-[20%] max-lg:-ml-8 w-[20%] ">
             <img 
             src="/enterprise.svg" 
             alt="" 

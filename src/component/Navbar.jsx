@@ -73,14 +73,14 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <div
-          className="max-lg:block hidden  cursor-pointer "
+          className="max-lg:block hidden cursor-pointer "
           onClick={() => setMenuOpen(true)}
         >
         <img src="/menu.svg" alt="" />
         </div>
 
         <a
-          href="mailto:olawunmibello1@gmail.com"
+          href="mailto:partnerships@juneinfra.com"
           target="_blank"
           className="max-lg:hidden"
         >

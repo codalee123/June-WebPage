@@ -3,7 +3,7 @@ import { Button2 } from '../component/button'
 
 const Explore = () => {
   return (
-    <div className='full h-max flex text-white py-20 max-lg:px-8 max-md:px-5 bg-black justify-center items-center'>
+    <div className='full h-max flex w-full text-white py-20 bg-black justify-center items-center'>
       {/* Background Image */}
         <img
           src="Explore-vector.svg"

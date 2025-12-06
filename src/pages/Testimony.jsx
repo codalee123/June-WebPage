@@ -37,7 +37,7 @@ const Testimony = () => {
 ];
 
   return (
-      <section className="w-full   bg-[#f4f3ff] flex flex-col items-center">
+      <section className="w-full bg-[#f4f3ff] flex flex-col items-center">
 
           <div className='relative w-full max-md:mx-6 max-w-232 flex justify-center items-center mt-10 mb-10'>
             <h2 className="text-6xl max-lg:text-[45px] font-black text-center font-inter max-md:mb-0 mb-20 pt-20">

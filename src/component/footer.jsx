@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <footer className=' bg-[#000000]'>
 
-        <section className='w-full px-20  py-10 h-max flex max-lg:px-8 max-md:px-6 max-md:py-15 gap-20 flex-col   '>
+        <section className='w-full px-20 py-10 h-max flex max-lg:px-8 max-md:px-6 max-md:py-15 gap-20 flex-col 2xl:w-450 2xl:justify-self-center'>
           <div className=' w-full h-full flex gap-[20%] max-md:gap-15 max-md:flex-col max-lg:gap-[8%] '>
             <div className='text-white w-[35%] max-md:w-full max-lg:w-[50%] '>
               <h1 className='font-extrabold text-[35px] max-md:text-3xl leading-9 '>

@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
 
    <> 
-      <nav className="fixed top-0 left-0 z-50 flex items-center justify-between w-full py-2 text-white bg-black/40 px-20 max-md:px-4 max-lg:px-10 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 z-50 flex items-center justify-between w-full py-2 text-white px-20 max-md:px-4 max-lg:px-10 bg-black/40 backdrop-blur-md 2xl:w-400 2xl:right-0 2xl:justify-self-center">
         <Link to={AppRoutes.home} onClick={closeDropdown} >
           <section className="flex items-center font-bold ">
             <div className="overflow-hidden w-30 max-sm:w-25">

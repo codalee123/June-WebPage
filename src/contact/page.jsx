@@ -52,7 +52,7 @@ const Contact = () => {
                 <button type="submit" className="bg-[rgba(161,106,250,1)] font-semibold py-3 px-8 text-white w-max text-[12px] max-lg:my-4">Submit</button>
               </form>
           </section>
-          <div className="grid grid-cols-3 mt-20 max-md:mt-5 px-0 gap-5 max-md:grid-cols-1 max-md:px-0 max-md:py-6 max-lg:grid-cols-1">
+          <div className="w-full grid grid-cols-3 mt-20 max-md:mt-5 px-0 gap-5 max-md:grid-cols-1 max-md:px-0 max-md:py-6 max-lg:grid-cols-1">
                 <ContactCard
                   imgPath={"/Email.svg"}
                   title={"Email"}

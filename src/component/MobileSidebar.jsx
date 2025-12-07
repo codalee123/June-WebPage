@@ -8,7 +8,7 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks,closeDropdown }) => {
   const [productOpen, setProductOpen] = useState(false);
   return (
     <div
-      className={`fixed top-0 left-0 z-999 h-full w-full sm:w-full bg-[rgba(32,17,60,1)] text-white px-3 py-6 transform transition-transform duration-300 max-lg:block hidden ${
+      className={`fixed top-0 left-0 z-999 h-full w-full sm:w-full overflow-scroll bg-[rgba(32,17,60,1)] text-white px-3 py-6 transform transition-transform duration-300 max-lg:block hidden ${
         menuOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >

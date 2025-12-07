@@ -5,30 +5,31 @@ const Explore = () => {
   return (
     <div className='full h-max flex w-full text-white py-20 bg-black justify-center items-center'>
       {/* Background Image */}
-        <img
-          src="Explore-vector.svg"
-          alt=""
-          className="
-            absolute
-            w-full 
-            h-max
-            object-contain
-            object-bottom
-            pointer-events-none
-            z-0
-            max-md:object-cover
-            max-md:h-[55%]
-          "
-        />        
-      <div className='flex flex-col gap-10 max-md:justify-center text-center max-md:items-center  '>
-        <p className='font-black text-4xl max-md:text-[40px] leading-12 '>Ready to Explore What June Can Do?</p>
-
-        <div className='flex  flex-wrap gap-4 justify-center items-center'>
-          <span className='font-light hover:text-gray-300 max-md:text-sm cursor-pointer text-[21px] border-r border-[#ffffff80] p-4'>Explore Solutions</span>
-          <span className='font-light hover:text-gray-300 max-md:text-sm text-[21px] cursor-pointer border-r border-[#ffffff80] p-4'>See Developer Docs</span>
-          <span className='font-light hover:text-gray-300 max-md:text-sm text-[21px] cursor-pointer  p-4'>Contact Sales</span>
+        <div className='2xl:w-450 2xl:justify-self-center'>
+          <img
+            src="Explore-vector.svg"
+            alt=""
+            className="
+              absolute
+              w-full
+              h-max
+              object-contain
+              object-bottom
+              pointer-events-none
+              z-0
+              max-md:object-cover
+              max-md:h-[55%]
+            "
+          />        
+                <div className='flex flex-col gap-10 max-md:justify-center text-center max-md:items-center  '>
+          <p className='font-black text-4xl max-md:text-[40px] leading-12 '>Ready to Explore What June Can Do?</p>
+          <div className='flex  flex-wrap gap-4 justify-center items-center'>
+            <span className='font-light hover:text-gray-300 max-md:text-sm cursor-pointer text-[21px] border-r border-[#ffffff80] p-4'>Explore Solutions</span>
+            <span className='font-light hover:text-gray-300 max-md:text-sm text-[21px] cursor-pointer border-r border-[#ffffff80] p-4'>See Developer Docs</span>
+            <span className='font-light hover:text-gray-300 max-md:text-sm text-[21px] cursor-pointer  p-4'>Contact Sales</span>
+          </div>
+                </div>
         </div>
-      </div>
     </div>
   )
 }

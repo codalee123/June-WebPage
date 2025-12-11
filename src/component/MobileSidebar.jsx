@@ -8,7 +8,7 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks,closeDropdown }) => {
   const [productOpen, setProductOpen] = useState(false);
   return (
     <div
-      className={`fixed top-0 left-0 z-999 h-full w-full sm:w-full bg-[rgba(32,17,60,1)] text-white px-3 py-6 transform transition-transform duration-300 max-lg:block hidden ${
+      className={`fixed top-0 left-0 z-999 h-full w-full sm:w-full overflow-scroll bg-[rgba(32,17,60,1)] text-white px-3 py-6 transform transition-transform duration-300 max-lg:block hidden ${
         menuOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -26,7 +26,7 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks,closeDropdown }) => {
       </div>
 
       {/* NAV LINKS */}
-     <section className="px-3 mt-10 ">
+     <section className={`px-3 mt-10 ${menuOpen ? "block" : "hidden"}`}>
         <nav className="flex flex-col gap-3 text-[24px] font-georama">
           {navLinks.map((link, index) => {
           if (link.dropdown) {
@@ -84,7 +84,7 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks,closeDropdown }) => {
               )} */}
 
         {/* BUTTON */}
-        <div className="mt-4 ">
+        <div className="mt-4 w-45">
           <MobileButton text={"Get In Touch"} logo={"/arrow-right.svg"} />
         </div>
       </section>  

@@ -53,114 +53,102 @@ const Solutions = () => {
   ]
   return (
       <>
-        <div className=" h-screen   bg-[#141414] gap-20 max-lg:gap-10  max-lg:flex-col max-sm:py-20  relative flex px-20 max-sm:px-6 justify-center items-center  ">
-      
-          {/* Main Content */}
-          <section className=' w-full max-w-130 max-lg:max-w-full h-max text-start space-y-6  text-white'>
-            <div className="text-7xl  font-extrabold  font-inter max-md:text-[39px] max-lg:text-6xl lg:leading-[70px] max-md:leading-13">
-              One Platform. Infinite Possibilities.
-            </div>
+                  
+            <section className='bg-[#141414] relative w-full h-max'>
+              <div className="flex gap-25 justify-self-center py-30 px-20 items-center max-md:w-screen max-md:px-10 max-md:py-10 max-md:gap-20 max-md:pb-20 max-md:h-max max-lg:h-248 max-lg:flex-col max-lg:py-30 max-lg:items-center max-lg:gap-10">
+                {/* Main Content */}
+                <section className=' w-full max-w-140 max-lg:max-w-full max-lg:pt-5 h-max text-start space-y-6  text-white max-md:pt-16'>
+                  <div className="text-7xl  font-extrabold  font-inter max-md:text-[39px] max-lg:text-6xl lg:leading-[70px] max-md:leading-13">
+                    One Platform. Infinite Possibilities.
+                  </div>
+                  <p className='text-base max-md:text-base font-inter font-normal text-[#fdf9f0]'>
+                    June delivers infrastructure that adapts to your business, so you can focus on growth and customers.
+                  </p>
+                </section>
+                {/* IMAGE */}
+                <div >
+                  <img src="/Solution-vector.svg" className='w-120 h-120 max-lg:w-full max-lg:h-full ' alt="" />
+                </div>
+              </div>
+            </section>
 
-            <p className='text-base max-md:text-base font-inter font-normal pb-8 text-[#fdf9f0]'>
-              June delivers infrastructure that adapts to your business, so you can focus on growth and customers.
-            </p>
-
-          </section>
-
-          {/* IMAGE */}
-
-          <div >
-            <img src="/Solution-vector.svg" className='w-120 h-120 max-lg:w-full max-lg:h-full ' alt="" />
+        <section className='px-25 max-lg:px-8 max-md:px-6 2xl:flex 2xl:flex-col 2xl:justify-self-center 2xl:justify-center 2xl:items-center 2xl:w-400'>
+          <div className='h-max py-8 w-full'>
+            {/* Content-section */}
+            <header className='max-w-140 max-md:max-w-full'>
+              <p className='text-5xl capitalize text-black font-bold leading-[60px] max-md:text-[42px] max-md:leading-10 '>
+                Building for businesses at every stage
+              </p>
+              <p className='font-normal text-[15px] text-[#121212] max-w-[80%] max-md:max-w-full max-md:text-[20px] max-md:leading-7 mt-4 '>
+                From idea to scale, June gives you the infrastructure to launch fast, grow securely, and expand confidently.
+              </p>
+            </header>
           </div>
-        </div>
-
-        <div className='h-max px-20  py-8 max-lg:px-8 max-md:px-6  '>
-
-          {/* Content-section */}
-          <header className=' max-w-140 max-md:max-w-full  '>
-            <p className='text-5xl capitalize text-black font-bold leading-[60px] max-md:text-[42px] max-md:leading-10 '>
-              Building for businesses at every stage
-            </p>
-            <p className='font-normal text-[15px] text-[#121212] max-w-[80%] max-md:max-w-full max-md:text-[20px] max-md:leading-7 mt-4 '>
-              From idea to scale, June gives you the infrastructure to launch fast, grow securely, and expand confidently.
-            </p>
-          </header>
-        </div>  
-
-        {/* Card-box */}
-        <div className="flex flex-wrap px-20 max-lg:px-6 gap-6 my-10">
-
-        {/* Cards */}
-            {cards.map((card) => (
-              <div key={card.id} className="max-md:w-full flex-col flex cursor-pointer max-lg:w-[48%] w-[31%]">
-                <Card2
-                  icon={card.icon}
-                  role={card.role}
-                  title={card.title}
-                  desc={card.desc}
+          {/* Card-box */}
+          <div className="flex flex-wrap max-lg:gap-6 gap-10 max-md:gap-6 my-10">
+          {/* Cards */}
+              {cards.map((card) => (
+                <div key={card.id} className="max-md:w-full flex-col flex cursor-pointer max-lg:w-[48%] w-[31%]">
+                  <Card2
+                    icon={card.icon}
+                    role={card.role}
+                    title={card.title}
+                    desc={card.desc}
+                  />
+                </div>
+              ))}
+          </div>
+          {/* Solution-Category */}
+           <section className='h-max pr-10 py-8'>
+              <p className='text-5xl capitalize text-black font-semibold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
+                <span className='text-[#7d55e5]'>Solution</span> Categories
+              </p>
+                {/* Card-Section */}
+              <div className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                <Card3
+                  icon={"/fintech.svg"}
+                  title={"Fintech Infrastructure"}
+                  desc={"Wallets, KYC/AML, payments, automation."}
+                />
+                <Card3
+                  icon={"/commerce.svg"}
+                  title={"Commerce Infrastructure"}
+                  desc={"Catalogs, checkout, logistics, CRM."}
+                />
+                <Card3
+                  icon={"/compliance.svg"}
+                  title={"Compliance & Security"}
+                  desc={"Enterprise-grade privacy, encryption, and data sovereignty."}
+                />
+                <Card3
+                  icon={"/industry.svg"}
+                  title={"Industry Verticals"}
+                  desc={"Flagship verticals (Skygrit → aviation)."}
                 />
               </div>
-            ))}
-        </div>
-        {/* Solution-Category */}
-         <section className='h-max pl-20 pr-10  py-8 max-lg:px-8 max-md:px-6  '>
-            <p className='text-5xl capitalize text-black font-semibold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
-              <span className='text-[#7d55e5]'>Solution</span> Categories
-            </p>
-
-              {/* Card-Section */}
-            <div className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-              <Card3
-                icon={"/fintech.svg"}
-                title={"Fintech Infrastructure"}
-                desc={"Wallets, KYC/AML, payments, automation."}
-              />
-
-              <Card3
-                icon={"/commerce.svg"}
-                title={"Commerce Infrastructure"}
-                desc={"Catalogs, checkout, logistics, CRM."}
-              />
-
-              <Card3
-                icon={"/compliance.svg"}
-                title={"Compliance & Security"}
-                desc={"Enterprise-grade privacy, encryption, and data sovereignty."}
-              />
-
-              <Card3
-                icon={"/industry.svg"}
-                title={"Industry Verticals"}
-                desc={"Flagship verticals (Skygrit → aviation)."}
-              />
-            </div>
-
-            {/* Observer
-                {(() => {
-                  const { ref, inView } = useInView({
-                    triggerOnce: true,
-                    threshold: 0.2, // start animation when 20% is visible
-                  });
-
-                  return (
-                    <motion.div
-                      ref={ref}
-                      variants={containerVariants}
-                      initial="hidden"
-                      animate={inView ? "show" : "hidden"}
-                      className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-                    >
-                      <Card3 icon={"/fintech.svg"} title={"Fintech Infrastructure"} desc={"Wallets, KYC/AML, payments, automation."} />
-
-                      <Card3 icon={"/commerce.svg"} title={"Commerce Infrastructure"} desc={"Catalogs, checkout, logistics, CRM."} />
-
-                      <Card3 icon={"/compliance.svg"} title={"Compliance & Security"} desc={"Enterprise-grade privacy, encryption, and data sovereignty."} />
-
-                      <Card3 icon={"/industry.svg"} title={"Industry Verticals"} desc={"Flagship verticals (Skygrit → aviation)."} />
-                    </motion.div>
-                  );
-                })()} */}
-         </section>    
+              {/* Observer
+                  {(() => {
+                    const { ref, inView } = useInView({
+                      triggerOnce: true,
+                      threshold: 0.2, // start animation when 20% is visible
+                    });
+                    return (
+                      <motion.div
+                        ref={ref}
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={inView ? "show" : "hidden"}
+                        className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+                      >
+                        <Card3 icon={"/fintech.svg"} title={"Fintech Infrastructure"} desc={"Wallets, KYC/AML, payments, automation."} />
+                        <Card3 icon={"/commerce.svg"} title={"Commerce Infrastructure"} desc={"Catalogs, checkout, logistics, CRM."} />
+                        <Card3 icon={"/compliance.svg"} title={"Compliance & Security"} desc={"Enterprise-grade privacy, encryption, and data sovereignty."} />
+                        <Card3 icon={"/industry.svg"} title={"Industry Verticals"} desc={"Flagship verticals (Skygrit → aviation)."} />
+                      </motion.div>
+                    );
+                  })()} */}
+           </section>
+        </section>
 
         <ExploreWithButton 
           text={"Ready to Transform Your Business?"} 

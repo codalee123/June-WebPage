@@ -23,7 +23,7 @@ const Hero = () => {
         <div className='h-max pb-50 pt-30 max-md:pb-30 flex flex-col justify-center text-center'>
           {/* Main Content */}
           <section className='w-full max-w-5xl space-y-4  text-white'>
-            <div className="text-9xl font-black lg:leading-[100%] font-inter max-lg:text-8xl max-md:text-[45px] ">
+            <div className="text-8xl font-black lg:leading-[100%] font-inter max-lg:text-8xl max-md:text-[45px] ">
               Powering <br />
               Africa’s Digital <br />
               Future

@@ -9,8 +9,10 @@ const MainHome = () => {
   return (
     <div>
       <Hero />
-      <WhyJune/>
-      <Built/>
+      <div className='px-20 max-lg:px-8 max-md:px-6 2xl:flex 2xl:flex-col 2xl:justify-self-center 2xl:justify-center 2xl:items-center 2xl:w-400'>
+        <WhyJune/>
+        <Built/>
+      </div>
       <Testimony/>
       <Explore/>
     </div>

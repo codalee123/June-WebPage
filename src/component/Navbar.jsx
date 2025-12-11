@@ -24,70 +24,64 @@ const Navbar = () => {
   return (
 
    <> 
-      <nav className="fixed top-0 left-0 z-50 flex items-center justify-between w-full py-2 text-white bg-black/40 px-20 max-md:px-4 max-lg:px-10 backdrop-blur-md">
-        <Link to={AppRoutes.home} onClick={closeDropdown} >
-          <section className="flex items-center font-bold ">
-            <div className="overflow-hidden w-30 max-sm:w-25">
-              <img src="/June-Logo.svg" className="w-full " />
-            </div>
-          </section>
-        </Link>
-
-        {/* NAV ITEMS — MAPPED */}
-        <div className="max-lg:hidden flex items-center gap-6 text-white">
-
-         {navLinks.map((link, index) => {
-          if (link.dropdown) {
+      <nav className="fixed top-0 left-0 z-50 w-full py-2 text-white px-20 max-md:px-4 max-lg:px-10 bg-black/70 backdrop-blur-md">
+        <section className='flex items-center justify-between 2xl:w-400 2xl:right-0 2xl:justify-self-center'>
+          <Link to={AppRoutes.home} onClick={closeDropdown} >
+            <section className="flex items-center font-bold ">
+              <div className="overflow-hidden w-30 max-sm:w-25">
+                <img src="/June-Logo.svg" className="w-full " />
+              </div>
+            </section>
+          </Link>
+          {/* NAV ITEMS — MAPPED */}
+          <div className="max-lg:hidden flex items-center gap-6 text-white">
+           {navLinks.map((link, index) => {
+            if (link.dropdown) {
+              return (
+                <button
+                  key={index}
+                  onClick={() => setProductOpen(!productOpen)}
+                  className="font-medium text-white text-base font-georama px-4 py-2 flex items-center gap-2 hover:text-gray-300"
+                >
+                  {link.name}
+                  <img
+                    src="/dropdown.svg"
+                    className={`transition-transform duration-300 ${productOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                      );
+                    }
             return (
-              <button
+              <NavLink
                 key={index}
-                onClick={() => setProductOpen(!productOpen)}
-                className="font-medium text-white text-base font-georama px-4 py-2 flex items-center gap-2 hover:text-gray-300"
+                to={link.path}
+                onClick={closeDropdown}
+                className={({ isActive }) =>
+                  `font-medium text-white text-base font-georama px-4 py-2 ${
+                    isActive ? "bg-[#a16afa]" : "hover:text-gray-300"
+                  }`
+                }
               >
                 {link.name}
-                <img 
-                  src="/dropdown.svg"
-                  className={`transition-transform duration-300 ${productOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-                    );
-                  }
-
-          return (
-            <NavLink
-              key={index}
-              to={link.path}
-              onClick={closeDropdown}
-              className={({ isActive }) =>
-                `font-medium text-white text-base font-georama px-4 py-2 ${
-                  isActive ? "bg-[#a16afa]" : "hover:text-gray-300"
-                }`
-              }
-            >
-              {link.name}
-            </NavLink>
-          );
-        })}
-
-        </div>
-
-        {/* Mobile menu button */}
-        <div
-          className="max-lg:block hidden  cursor-pointer "
-          onClick={() => setMenuOpen(true)}
-        >
-        <img src="/menu.svg" alt="" />
-        </div>
-
-        <a
-          href="mailto:olawunmibello1@gmail.com"
-          target="_blank"
-          className="max-lg:hidden"
-        >
-
-          <Button text={"Get in Touch"} logo={"/arrow-right.svg"}/>
-
-        </a>
+              </NavLink>
+            );
+          })}
+          </div>
+          {/* Mobile menu button */}
+          <div
+            className="max-lg:block hidden cursor-pointer "
+            onClick={() => setMenuOpen(true)}
+          >
+          <img src="/menu.svg" alt="" />
+          </div>
+          <a
+            href="mailto:partnerships@juneinfra.com"
+            target="_blank"
+            className="max-lg:hidden"
+          >
+            <Button text={"Get in Touch"} logo={"/arrow-right.svg"}/>
+          </a>
+        </section>
       </nav>  
 
       {/* PRODUCT DROPDOWN */}

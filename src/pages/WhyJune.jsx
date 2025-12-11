@@ -40,7 +40,7 @@ const cards = [
 const WhyJune = () => {
   return (
     <div>
-      <div className="h-max pt-20 flex items-center justify-center  px-20 max-lg:px-8 max-md:px-6 max-md:pt-10 text-center ">
+      <div className="h-max pt-20 flex items-center justify-center max-md:pt-10 text-center">
           {/* Content */}
         <section className=" w-full font-inter space-y-4 mx-auto max-md:w-full">
             {/* header */}
@@ -72,7 +72,7 @@ const WhyJune = () => {
           <div className="flex flex-wrap w-full gap-6 my-10">
 
             {/* Purple Card */}
-            <div className="max-md:w-full rounded-lg p-6 hover:scale-105 active:scale-95 max-lg:w-[48%] w-[31%]  bg-[#a16afa]">
+            <div className="max-md:w-full rounded-lg p-6 hover:scale-105 active:scale-95 max-lg:w-[48%] w-[34%]  bg-[#a16afa]">
               <p className='text-start text-5xl font-black cursor-pointer text-white leading-15 mt-9'>
                 Our <br />
                 Major <br />d
@@ -93,7 +93,7 @@ const WhyJune = () => {
             ))}
 
             {/* Purple Card */}
-            <div className="max-md:w-full rounded-lg hover:scale-105 active:scale-95 p-6  max-lg:w-[48%] w-[31%]  bg-[#a16afa]">
+            <div className="max-md:w-full rounded-lg hover:scale-105 active:scale-95 p-6  max-lg:w-[48%] w-[34%]  bg-[#a16afa]">
               <p className='text-start text-sm text-white font-medium'>
                 Let's worry about the execution,<br />
                 while you focus on getting <br />

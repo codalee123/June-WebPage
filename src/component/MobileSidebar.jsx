@@ -92,7 +92,7 @@ const MobileSidebar = ({ menuOpen, setMenuOpen, navLinks,closeDropdown }) => {
       {/* Bottom Decoration */}
         <img
         src="/menu-vector.svg"
-        className="absolute bottom-0 right-0 w-55 max-xsm:hidden  "
+        className="absolute bottom-0 right-0 w-55 max-xsm:hidden hide-in-landscape  "
       />
       
     </div>

@@ -85,7 +85,7 @@ const Solutions = () => {
             </header>
           </div>
           {/* Card-box */}
-          <div className="flex flex-wrap max-lg:gap-6 gap-10 max-md:gap-6 my-10">
+          <div className="flex flex-wrap max-lg:gap-6 gap-9 max-md:gap-6 my-10">
           {/* Cards */}
               {cards.map((card) => (
                 <div key={card.id} className="max-md:w-full flex-col flex cursor-pointer max-lg:w-[48%] w-[31%]">
@@ -99,7 +99,7 @@ const Solutions = () => {
               ))}
           </div>
           {/* Solution-Category */}
-           <section className='h-max pr-10 py-8'>
+           <section className='h-max pr-10  py-8'>
               <p className='text-5xl capitalize text-black font-semibold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
                 <span className='text-[#7d55e5]'>Solution</span> Categories
               </p>

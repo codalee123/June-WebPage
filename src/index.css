@@ -22,5 +22,12 @@ html {
   }
 }
 
+@media (orientation: landscape) {
+  .hide-in-landscape {
+    display: none !important;
+  }
+}
+
+
 
 

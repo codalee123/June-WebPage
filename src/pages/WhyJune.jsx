@@ -69,13 +69,13 @@ const WhyJune = () => {
           </blockquote>
 
           {/* Card-box */}
-          <div className="flex flex-wrap w-full gap-6 my-10">
+          <div className="flex flex-wrap w-full gap-5 my-10">
 
             {/* Purple Card */}
             <div className="max-md:w-full rounded-lg p-6 hover:scale-105 active:scale-95 max-lg:w-[48%] w-[34%]  bg-[#a16afa]">
               <p className='text-start text-5xl font-black cursor-pointer text-white leading-15 mt-9'>
                 Our <br />
-                Major <br />d
+                Major <br />
                 Highlights
               </p>
             </div>

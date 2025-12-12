@@ -18,8 +18,8 @@ const Footer = () => {
                 monthly newsletter
               </h1>
               <p className='text-base max-md:text-[19px] max-lg:text-[20px]  my-3 max-w-[90%] max-lg:max-w-full max-md:max-w-full'>
-                Be the first to know what’s new in the
-                Propelverse. Subscribe to our newsletter now!
+                Be the first to know what’s new at june.
+                Subscribe to our newsletter now!
               </p>
 
               {/* Button */}

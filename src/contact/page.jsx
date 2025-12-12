@@ -49,7 +49,7 @@ const Contact = () => {
                     className="border-b-2 border-gray-400 block w-full h-25 focus:outline-none focus:border-black"
                   ></textarea>
                 </div>
-                <button type="submit" className="bg-[rgba(161,106,250,1)] font-semibold py-3 px-8 text-white w-max text-[12px] max-lg:my-4">Submit</button>
+                <button type="submit" className="bg-[rgba(161,106,250,1)] font-semibold cursor-pointer hover:bg-[#813eeef1] active:scale-95  py-3 px-8 text-white w-max text-[12px] max-lg:my-4">Submit</button>
               </form>
           </section>
           <div className="w-full grid grid-cols-3 mt-20 max-md:mt-5 px-0 gap-5 max-md:grid-cols-1 max-md:px-0 max-md:py-6 max-lg:grid-cols-1">

@@ -9,7 +9,7 @@ const About = () => {
         <div className="text-6xl w-130 h-max text-white font-extrabold max-md:text-4xl max-md:pt-15 max-md:w-75 max-lg:text-6xl max-lg:w-150">
         Africa's <br /> Cloud Backbone for Builders and Businesses
         </div>
-        <div className="h-100 w-125 max-md:h-75 max-md:w-80 max-lg:w-135 max-lg:h-90">
+        <div className="h-100 w-125 max-md:h-75 max-md:w-80 max-lg:w-135 max-lg:h-90 cursor-pointer">
         <img src="/about_hero.svg" alt="" />
         </div>
       </div>
@@ -45,7 +45,7 @@ const About = () => {
     </div>
 
      <div className="mt-20 flex w-full justify-between gap-8 max-md:flex-col max-md:items-center max-lg:w-[650px]">
-       <div className="w-100 max-md:w-[20rem] max-lg:w-[20rem]">
+       <div className="w-100 max-md:w-[20rem] max-lg:w-[20rem] cursor-pointer">
         <img src="/about_story.svg" alt="image"/>
        </div>
        <article className="w-150 text-xl max-md:w-[20rem] max-md:text-[11px] text-gray-600 max-lg:text-[13px]">

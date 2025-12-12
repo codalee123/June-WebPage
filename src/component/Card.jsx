@@ -71,13 +71,13 @@ export const Card2 =({icon,role,title,desc})=>{
           className="h-[23%] w-[16%]  absolute top-4 left-4"
         />
 
-      <div className='text-start my-15'>
+      <div className='text-start mb-8 mt-15'>
 
         {/* Title */}
         <h3 className="text-xl font-bold mt-1">{title}</h3>
 
         {/* Description */}
-        <p className="text-[rgba(0,0,0,1)] text-[14px] font-light mt-3 leading-relaxed">
+        <p className="text-[rgba(0,0,0,1)] text-[13px] font-light mt-3 leading-relaxed">
           {desc}
         </p>
       </div>
@@ -92,7 +92,7 @@ export const Card2 =({icon,role,title,desc})=>{
 
 export const Card3 = ({icon,title,desc})=>{
   return(
-    <div className="w-full h-48 bg-[#fbf8ff] cursor-pointer hover:shadow-md rounded-lg  flex flex-col  p-6 relative ">
+    <div className="w-full  h-48 bg-[#fbf8ff] cursor-pointer hover:shadow-md rounded-lg  flex flex-col  p-6 relative ">
 
       {/* Icon top-right */}
         <img
@@ -107,7 +107,7 @@ export const Card3 = ({icon,title,desc})=>{
         <h3 className="text-[18px] font-bold mt-1">{title}</h3>
 
         {/* Description */}
-        <p className="text-[#64728f] text-[13px] font-normal mt-3 leading-relaxed">
+        <p className="text-[#64728f] text-[11px] font-normal mt-3 leading-relaxed">
           {desc}
         </p>
       </div>

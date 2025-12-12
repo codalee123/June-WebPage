@@ -6,7 +6,6 @@ import Footer from "./component/footer";
 import MainHome from "./Home/home";
 import About from "./about/page";
 import Solutions from "./solutions/page";
-import Products from "./products/page";
 import Contact from "./contact/page";
 
 
@@ -21,7 +20,6 @@ function App() {
         <Route path="/" element={<MainHome/>} />
         <Route path={AppRoutes.about} element={<About/>} />
         <Route path={AppRoutes.solutions} element={<Solutions />} />
-        {/* <Route path={AppRoutes.products} element={<Products />} /> */}
         <Route path={AppRoutes.contact} element={<Contact />} />
       </Routes>
 

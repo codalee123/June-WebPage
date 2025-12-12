@@ -12,14 +12,14 @@ const Footer = () => {
 
         <section className='w-full px-20 py-10 h-max flex max-lg:px-8 max-md:px-6 max-md:py-15 gap-20 flex-col 2xl:w-450 2xl:justify-self-center'>
           <div className=' w-full h-full flex gap-[20%] max-md:gap-15 max-md:flex-col max-lg:gap-[8%] '>
-            <div className='text-white w-[35%] max-md:w-full max-lg:w-[50%] '>
-              <h1 className='font-extrabold text-[35px] max-md:text-3xl leading-9 '>
+            <div className='text-white  w-[35%] max-md:w-full max-lg:w-[50%] '>
+              <h1 className='font-extrabold text-[38px] max-md:text-3xl leading-9 '>
                 Subscribe to our <br />
                 monthly newsletter
               </h1>
-              <p className='text-base max-md:text-[19px] max-lg:text-[20px]  my-3 max-w-[65%] max-lg:max-w-full max-md:max-w-full'>
-                Be the first to know what’s new at
-                June. Subscribe to our newsletter now!
+              <p className='text-base max-md:text-[19px] max-lg:text-[20px]  my-3 max-w-[90%] max-lg:max-w-full max-md:max-w-full'>
+                Be the first to know what’s new in the
+                Propelverse. Subscribe to our newsletter now!
               </p>
 
               {/* Button */}

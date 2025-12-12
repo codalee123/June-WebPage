@@ -98,13 +98,14 @@ const Solutions = () => {
                 </div>
               ))}
           </div>
+
           {/* Solution-Category */}
-           <section className='h-max pr-10  py-8'>
+           <section className='h-max py-8'>
               <p className='text-5xl capitalize text-black font-semibold leading-[60px] max-md:text-[26px] max-md:leading-7  '>
                 <span className='text-[#7d55e5]'>Solution</span> Categories
               </p>
                 {/* Card-Section */}
-              <div className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              <div className="grid grid-cols-1 py-10 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 <Card3
                   icon={"/fintech.svg"}
                   title={"Fintech Infrastructure"}

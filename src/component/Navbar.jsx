@@ -41,7 +41,7 @@ const Navbar = () => {
                 <button
                   key={index}
                   onClick={() => setProductOpen(!productOpen)}
-                  className="font-medium text-white text-base font-georama px-4 py-2 flex items-center gap-2 hover:text-gray-300"
+                  className="font-medium text-white text-base  px-4 py-2 flex items-center gap-2 hover:text-gray-300"
                 >
                   {link.name}
                   <img
@@ -57,7 +57,7 @@ const Navbar = () => {
                 to={link.path}
                 onClick={closeDropdown}
                 className={({ isActive }) =>
-                  `font-medium text-white text-base font-georama px-4 py-2 ${
+                  `font-medium text-white text-base px-4 py-2 ${
                     isActive ? "bg-[#a16afa]" : "hover:text-gray-300"
                   }`
                 }

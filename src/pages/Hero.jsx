@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
       <div id="/"
-      className=" h-max  bg-[#141414] relative flex  items-center justify-center "
+      className=" w-full h-max overflow-hidden bg-[#141414] relative flex  items-center justify-center "
      
       >
 

@@ -52,7 +52,7 @@ const WhyJune = () => {
             </p>
           </div>
 
-          <blockquote className='flex max-lg:flex-col max-lg:justify-center gap-[2%] max-lg:gap-7  max-md:gap-6'>
+          <blockquote className='flex flex-col lg:flex-row gap-8'>
             <div className='w-[40%] max-lg:w-full max-lg:justify-center  pt-15 pl-10 max-md:py-5  max-md:gap-15  flex flex-col gap-30 bg-[#f4eeff]'>
               <p className='text-3xl font-bold text-start w-[340px] max-md:w-[260px] '>
                 At June, we go beyond digital solutions. We create the backbone that Africa’s industries depend on. 
@@ -63,16 +63,16 @@ const WhyJune = () => {
               </button>
             </div>
 
-            <div className='w-[58%] max-lg:w-full max-md:w-full'>
-              <img src="/Why.svg" alt="" />
+            <div className='lg:flex-1'>
+              <img src="/Why.svg" alt="" className="w-full"/>
             </div>
           </blockquote>
 
           {/* Card-box */}
-          <div className="flex flex-wrap w-full gap-5 my-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
             {/* Purple Card */}
-            <div className="max-md:w-full rounded-lg p-6 hover:scale-105 active:scale-95 max-lg:w-[48%] w-[34%]  bg-[#a16afa]">
+            <div className="max-md:w-full rounded-lg p-6 hover:scale-105 active:scale-95  bg-[#a16afa]">
               <p className='text-start text-5xl font-black cursor-pointer text-white leading-15 mt-9'>
                 Our <br />
                 Major <br />
@@ -82,7 +82,7 @@ const WhyJune = () => {
 
             {/* Cards */}
             {cards.map((card) => (
-              <div key={card.id} className="max-md:w-full cursor-pointer max-lg:w-[48%] w-[31%]">
+              <div key={card.id} className="max-md:w-full cursor-pointer">
                 <Card
                   icon={card.icon}
                   number={card.number}
@@ -93,7 +93,7 @@ const WhyJune = () => {
             ))}
 
             {/* Purple Card */}
-            <div className="max-md:w-full rounded-lg hover:scale-105 active:scale-95 p-6  max-lg:w-[48%] w-[34%]  bg-[#a16afa]">
+            <div className="max-md:w-full rounded-lg hover:scale-105 active:scale-95 p-6 bg-[#a16afa]">
               <p className='text-start text-sm text-white font-medium'>
                 Let's worry about the execution,<br />
                 while you focus on getting <br />

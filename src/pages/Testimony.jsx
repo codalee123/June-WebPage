@@ -37,9 +37,9 @@ const Testimony = () => {
 ];
 
   return (
-      <section className="w-z bg-[#f4f3ff] flex flex-col items-center">
+      <section className="w-full bg-[#f4f3ff] flex flex-col items-center">
 
-          <div className='2xl:w-400 2xl:justify-self-center'>
+          <div className='max-w-7xl mx-auto w-full 2xl:justify-self-center'>
             <div className='relative mx-auto w-full max-md:mx-auto max-w-232  flex justify-center items-center mt-10 mb-10'>
               <h2 className="text-6xl max-lg:text-[45px] font-black text-center font-inter max-md:mb-0 mb-20 pt-20">
                 What They Say About June

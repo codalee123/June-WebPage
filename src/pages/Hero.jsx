@@ -3,22 +3,9 @@ import React from 'react'
 const Hero = () => {
   return (
       <div id="/"
-      className=" w-full h-max overflow-hidden bg-[#141414] relative flex  items-center justify-center "
-     
+      className="w-full h-max bg-[#141414] relative"
       >
-
-{/* 
-          <div className='bg-amber-300 absolute  inset-0 z-0'
-            style={{
-              backgroundImage: 'url("/Plug.svg")',
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "bottom ",
-          
-            }} 
-          >
-            
-          </div> */}
+        <section className='flex justify-center items-center'>
 
         <div className='h-max pb-50 pt-30 max-md:pb-30 flex flex-col justify-center text-center'>
           {/* Main Content */}
@@ -63,7 +50,8 @@ const Hero = () => {
             max-md:object-cover
             max-md:h-[55%]
           "
-        />        
+        />       
+        </section> 
       </div>
   )
 }

@@ -40,9 +40,9 @@ const cards = [
 const WhyJune = () => {
   return (
     <div>
-      <div className="h-max pt-20 flex items-center justify-center max-md:pt-10 text-center">
+      <div className="w-full h-max pt-20 flex items-center justify-center max-md:pt-10 text-center">
           {/* Content */}
-        <section className=" w-full font-inter space-y-4 mx-auto max-md:w-full">
+        <section className=" w-full font-inter space-y-4 mx-auto lg:flex lg:flex-col lg:justify-self-center lg:justify-center lg:items-center">
             {/* header */}
           <div className=' flex flex-col items-center justify-center'>
             <p className="text-4xl font-extrabold max-md:text-4xl">Why June?</p>
@@ -69,7 +69,7 @@ const WhyJune = () => {
           </blockquote>
 
           {/* Card-box */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:justify-self-center lg:justify-center lg:items-center max-w-7xl mx-auto">
 
             {/* Purple Card */}
             <div className="max-md:w-full rounded-lg p-6 hover:scale-105 active:scale-95  bg-[#a16afa]">

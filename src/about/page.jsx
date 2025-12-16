@@ -3,7 +3,7 @@ import { ExploreWithoutButton } from "../pages/Explore";
 
 const About = () => {
  return (
-  <div className="overflow-hidden">
+  <div className="">
    <section className="bg-[#141414] relative w-full h-max">
       <div className="flex gap-25 justify-self-center py-30 px-20 items-center max-md:w-screen max-md:px-10 max-md:py-10 max-md:gap-20 max-md:pb-20 max-md:h-max max-lg:h-248 max-lg:flex-col max-lg:py-30 max-lg:items-center max-lg:gap-10">
         <div className="text-6xl w-130 h-max text-white font-extrabold max-md:text-4xl max-md:pt-15 max-md:w-75 max-lg:text-6xl max-lg:w-150">

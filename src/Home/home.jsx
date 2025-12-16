@@ -2,7 +2,7 @@
 // import Hero from '../pages/Hero';
 // import WhyJune from '../pages/WhyJune';
 // import Built from '../pages/Built';
-// import Explore from '../pages/Explore';
+import Explore from '../pages/Explore';
 // import Testimony from '../pages/Testimony';
 
 // const MainHome = () => {
@@ -38,41 +38,93 @@ const Card = ({ icon, number, title, desc }) => (
 // Hero Component
 const Hero = () => {
   return (
-    <div id="/" className="w-full min-h-screen bg-[#141414] relative overflow-hidden">
-      <section className='flex justify-center items-center px-4 sm:px-6 lg:px-8'>
-        <div className='min-h-screen pb-32 pt-24 md:pb-40 md:pt-32 flex flex-col justify-center text-center max-w-5xl w-full'>
-          {/* Main Content */}
-          <section className='w-full space-y-6 text-white relative z-10'>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight font-inter">
-              Powering <br />
-              Africa's Digital <br />
-              Future
-            </h1>
+    // <div id="/" className="w-full min-h-screen bg-[#141414] relative overflow-hidden">
+    //   <section className='flex justify-center items-center px-4 sm:px-6 lg:px-8'>
+    //     <div className='min-h-screen pb-32 pt-24 md:pb-40 md:pt-32 flex flex-col justify-center text-center max-w-5xl w-full'>
+    //       {/* Main Content */}
+    //       <section className='w-full space-y-6 text-white relative z-10'>
+    //         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight font-inter">
+    //           Powering <br />
+    //           Africa's Digital <br />
+    //           Future
+    //         </h1>
 
-            <p className='text-base md:text-lg font-inter font-normal pb-4 md:pb-8'>
+    //         <p className='text-base md:text-lg font-inter font-normal pb-4 md:pb-8'>
+    //           Build, launch, and scale your business with June
+    //         </p>
+    //       </section>
+
+    //       <article className='flex flex-col sm:flex-row justify-center items-center gap-3 text-sm md:text-base font-semibold mt-6 md:mt-8 relative z-10'>
+    //         <button className='w-full sm:w-auto inline-block text-center hover:scale-105 active:scale-95 transition-all duration-100 cursor-pointer px-6 sm:px-8 py-3 md:py-4 bg-white'>
+    //           Book a Demo
+    //         </button>
+
+    //         <button className='w-full sm:w-auto inline-block text-center hover:scale-105 active:scale-95 transition-all duration-100 cursor-pointer px-6 sm:px-8 py-3 md:py-4 bg-[#a16afa] text-white'>
+    //           Start Building
+    //         </button>
+    //       </article>
+    //     </div>
+
+    //     {/* Background Image */}
+    //     <img
+    //       src="/Plug.svg"
+    //       alt="plug background"
+    //       className="absolute w-full h-auto object-contain object-bottom pointer-events-none z-0 bottom-0 max-h-[50vh] md:max-h-[60vh]"
+    //     />
+    //   </section>
+    // </div>
+
+    <div id="/"
+      className="w-full h-max bg-[#141414] relative"
+      >
+        <section className='flex justify-center items-center'>
+
+        <div className='h-max pb-50 pt-30 max-md:pb-30 flex flex-col justify-center text-center'>
+          {/* Main Content */}
+          <section className='w-full max-w-5xl space-y-4  text-white'>
+            <div className="text-8xl font-black lg:leading-[100%] font-inter max-lg:text-8xl max-md:text-[45px] ">
+              Powering <br />
+              Africa’s Digital <br />
+              Future
+            </div>
+
+            <p className='text-base font-inter font-normal pb-8'>
               Build, launch, and scale your business with June
             </p>
+
           </section>
 
-          <article className='flex flex-col sm:flex-row justify-center items-center gap-3 text-sm md:text-base font-semibold mt-6 md:mt-8 relative z-10'>
-            <button className='w-full sm:w-auto inline-block text-center hover:scale-105 active:scale-95 transition-all duration-100 cursor-pointer px-6 sm:px-8 py-3 md:py-4 bg-white'>
+          <article className='flex justify-center items-center gap-3 text-base max-md:text-[12px] font-semibold max-md:mt-10 max-xsm:mt-2 max-lg:mt-18'>
+            <button className='relative z-20 inline-block text-center hover:scale-105 active:scale-95 transition-all duration-100  cursor-pointer  px-8 py-4 bg-white w-max max-md:w-max max-sm:py-3 max-sm:px-7 '>
               Book a Demo
             </button>
 
-            <button className='w-full sm:w-auto inline-block text-center hover:scale-105 active:scale-95 transition-all duration-100 cursor-pointer px-6 sm:px-8 py-3 md:py-4 bg-[#a16afa] text-white'>
+            <button className='relative z-20 inline-block text-center hover:scale-105 active:scale-95 transition-all duration-100  cursor-pointer  px-8 py-4 bg-[#a16afa] text-white w-max max-md:w-max max-sm:py-3 max-sm:px-7  '>
               Start Building
             </button>
           </article>
-        </div>
 
-        {/* Background Image */}
+        </div>  
+
+        {/* 🔌 Background Image */}
         <img
           src="/Plug.svg"
           alt="plug background"
-          className="absolute w-full h-auto object-contain object-bottom pointer-events-none z-0 bottom-0 max-h-[50vh] md:max-h-[60vh]"
-        />
-      </section>
-    </div>
+          className="
+            absolute
+            w-full 
+            h-max
+            object-contain
+            object-bottom
+            pointer-events-none
+            z-0
+            bottom-0
+            max-md:object-cover
+            max-md:h-[55%]
+          "
+        />       
+        </section> 
+      </div>
   );
 };
 
@@ -363,38 +415,38 @@ const Testimony = () => {
 };
 
 // Explore Component
-const Explore = () => {
-  return (
-    <div className='relative min-h-[400px] flex w-full text-white py-16 md:py-20 bg-black justify-center items-center overflow-hidden'>
-      {/* Background Image */}
-      <img
-        src="/Explore-vector.svg"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none opacity-30"
-      />
+// const Explore = () => {
+//   return (
+//     <div className='relative min-h-[400px] flex w-full text-white py-16 md:py-20 bg-black justify-center items-center overflow-hidden'>
+//       {/* Background Image */}
+//       <img
+//         src="/Explore-vector.svg"
+//         alt=""
+//         className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none opacity-30"
+//       />
 
-      <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='flex flex-col gap-8 md:gap-10 text-center items-center'>
-          <h2 className='font-black text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl'>
-            Ready to Explore What June Can Do?
-          </h2>
+//       <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+//         <div className='flex flex-col gap-8 md:gap-10 text-center items-center'>
+//           <h2 className='font-black text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl'>
+//             Ready to Explore What June Can Do?
+//           </h2>
           
-          <div className='flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4 justify-center items-center text-sm md:text-base lg:text-lg'>
-            <a href="#solutions" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
-              Explore Solutions
-            </a>
-            <a href="#docs" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
-              See Developer Docs
-            </a>
-            <a href="#contact" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 transition-colors'>
-              Contact Sales
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//           <div className='flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4 justify-center items-center text-sm md:text-base lg:text-lg'>
+//             <a href="#solutions" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
+//               Explore Solutions
+//             </a>
+//             <a href="#docs" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
+//               See Developer Docs
+//             </a>
+//             <a href="#contact" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 transition-colors'>
+//               Contact Sales
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 // MainHome Component
 const MainHome = () => {

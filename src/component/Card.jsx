@@ -28,6 +28,26 @@ const Card = ({icon,number,title,desc}) => {
   )
 }
 
+
+
+
+
+
+
+
+
+
+// // Card Component
+// const Card = ({ icon, number, title, desc }) => (
+//   <div className="bg-white rounded-lg p-6 hover:scale-105 active:scale-95 transition-all duration-200 h-full flex flex-col">
+//     <div className="flex items-center gap-3 mb-4">
+//       <img src={icon} alt={title} className="w-8 h-8" />
+//       <span className="text-gray-400 text-sm font-medium">{number}</span>
+//     </div>
+//     <h3 className="text-xl font-bold mb-3">{title}</h3>
+//     <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+//   </div>
+// );
 export default Card
 
 // ABOUT CARD

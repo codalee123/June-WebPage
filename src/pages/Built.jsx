@@ -3,7 +3,7 @@ import React from 'react'
 const Built = () => {
   return (
     <div>
-      <div className='h-max py-8 px-20'>
+      <div className='w-full h-max py-8'>
 
         {/* Content-section */}
         <header className=' max-w-125 max-md:max-w-80'>

@@ -2,7 +2,7 @@
 // import Hero from '../pages/Hero';
 // import WhyJune from '../pages/WhyJune';
 // import Built from '../pages/Built';
-import Explore from '../pages/Explore';
+// import Explore from '../pages/Explore';
 // import Testimony from '../pages/Testimony';
 
 // const MainHome = () => {
@@ -415,38 +415,38 @@ const Testimony = () => {
 };
 
 // Explore Component
-// const Explore = () => {
-//   return (
-//     <div className='relative min-h-[400px] flex w-full text-white py-16 md:py-20 bg-black justify-center items-center overflow-hidden'>
-//       {/* Background Image */}
-//       <img
-//         src="/Explore-vector.svg"
-//         alt=""
-//         className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none opacity-30"
-//       />
+const Explore = () => {
+  return (
+    <div className='relative min-h-[400px] flex w-full text-white py-16 md:py-20 bg-black justify-center items-center overflow-hidden'>
+      {/* Background Image */}
+      <img
+        src="/Explore-vector.svg"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none opacity-30"
+      />
 
-//       <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-//         <div className='flex flex-col gap-8 md:gap-10 text-center items-center'>
-//           <h2 className='font-black text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl'>
-//             Ready to Explore What June Can Do?
-//           </h2>
+      <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='flex flex-col gap-8 md:gap-10 text-center items-center'>
+          <h2 className='font-black text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl'>
+            Ready to Explore What June Can Do?
+          </h2>
           
-//           <div className='flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4 justify-center items-center text-sm md:text-base lg:text-lg'>
-//             <a href="#solutions" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
-//               Explore Solutions
-//             </a>
-//             <a href="#docs" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
-//               See Developer Docs
-//             </a>
-//             <a href="#contact" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 transition-colors'>
-//               Contact Sales
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+          <div className='flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4 justify-center items-center text-sm md:text-base lg:text-lg'>
+            <a href="#solutions" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
+              Explore Solutions
+            </a>
+            <a href="#docs" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 border-b sm:border-b-0 sm:border-r border-[#ffffff80] transition-colors'>
+              See Developer Docs
+            </a>
+            <a href="#contact" className='font-light hover:text-gray-300 cursor-pointer px-4 py-2 transition-colors'>
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 // MainHome Component
 const MainHome = () => {

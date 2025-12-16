@@ -5,7 +5,7 @@ const Explore = () => {
   return (
     <div className=' h-max flex w-full text-white py-20 bg-black justify-center items-center'>
       {/* Background Image */}
-        <div className='2xl:w-450 2xl:justify-self-center'>
+        <div className='w-full'>
           <img
             src="Explore-vector.svg"
             alt=""

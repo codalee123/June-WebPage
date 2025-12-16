@@ -40,7 +40,7 @@ const cards = [
 const WhyJune = () => {
   return (
     <div>
-      <div className="w-full bg-amber-300 h-max pt-20 flex items-center justify-center max-md:pt-10 text-center">
+      <div className="w-full  h-max pt-20 flex items-center justify-center max-md:pt-10 text-center">
           {/* Content */}
         <section className=" w-full font-inter space-y-4 mx-auto lg:flex lg:flex-col lg:justify-self-center lg:justify-center lg:items-center">
             {/* header */}

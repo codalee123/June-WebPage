@@ -16,12 +16,13 @@ export const Button = ({text, logo}) => {
 // Mobile Button
 export const MobileButton = ({text, logo}) => {
   return (
-    <div className=' flex justify-start gap-x-3 items-center hover:scale-105 active:scale-95 transition-all duration-100  cursor-pointer  px-6 py-3 bg-white w-fit max-md:w-full max-sm:py-5 '>
+    <a href='mailto:partnerships@juneinfra.com
+      ' className=' flex justify-start gap-x-3 items-center hover:scale-105 active:scale-95 transition-all duration-100  cursor-pointer  px-6 py-3 bg-white w-fit max-md:w-full max-sm:py-5 '>
         <p className='text-base  font-medium font-inter max-sm:text-base text-black'>
           {text}
         </p>
         {logo && <img src={logo} />}
-    </div>
+    </a>
   )
 } 
 

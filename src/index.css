@@ -6,6 +6,7 @@
   --font-georama: Georama, sans-serif;
   --font-inter: Inter, sans-serif;
   --breakpoint-xsm: 380px;
+  /* --breakpoint--lsm:450px; */
 
 }
 
@@ -27,6 +28,7 @@ html {
     display: none !important;
   }
 }
+
 
 
 

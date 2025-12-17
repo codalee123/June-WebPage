@@ -1,1 +1,36 @@
+@import url('fonts.googleapis.com');
+@import url('fonts.googleapis.com');
+@import "tailwindcss";
+
+@theme {
+  --font-georama: Georama, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --breakpoint-xsm: 380px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    /* GLOBAL PADDING FIX: 
+       Sets a minimum of 1rem (16px), a preferred scaling of 4vw, 
+       and a maximum of 3rem (48px) to keep layout consistent. */
+    padding: clamp(1rem, 4vw, 3rem);
+    
+    /* Ensures padding doesn't push elements past the screen width */
+    box-sizing: border-box; 
+  }
+}
+
+@media (orientation: landscape) {
+  .hide-in-landscape {
+    display: none !important;
+  }
+}
 

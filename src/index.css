@@ -20,8 +20,6 @@ html {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /**padding: clamp(1rem, 4vw, 3rem);**/
-    box-sizing: border-box;
   }
 }
 

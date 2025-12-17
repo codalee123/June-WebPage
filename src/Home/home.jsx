@@ -3,7 +3,7 @@ import Hero from '../pages/Hero';
 import WhyJune from '../pages/WhyJune';
 import Built from '../pages/Built';
 import Explore from '../pages/Explore';
-//import Testimony from '../pages/Testimony';
+import Testimony from '../pages/Testimony';
 
 // MainHome Component
 // const MainHome = () => {
@@ -31,7 +31,8 @@ const MainHome = () => {
         <WhyJune/>
         <Built/>
       </div>
-           <Explore/>
+      <Testimony/>
+      <Explore/>
     </>
   )
 }

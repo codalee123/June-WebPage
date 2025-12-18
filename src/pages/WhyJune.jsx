@@ -54,7 +54,7 @@ const WhyJune = () => {
 
           <blockquote className='flex flex-col lg:flex-row gap-8'>
             <div className='w-[40%] max-lg:w-full max-lg:justify-center  pt-15 pl-10 max-md:py-5  max-md:gap-15  flex flex-col gap-30 bg-[#f4eeff]'>
-              <p className='text-3xl font-bold text-start w-[340px] max-md:w-[260px] '>
+              <p className='text-3xl font-bold text-start w-[340px] max-md:w-[260px] max-w-[100%] '>
                 At June, we go beyond digital solutions. We create the backbone that Africa’s industries depend on. 
               </p>
 

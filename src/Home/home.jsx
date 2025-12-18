@@ -32,6 +32,7 @@ const MainHome = () => {
         <Built/>
       </div>
       {/*<Testimony/>*/}
+      <Testimony/>
       <Explore/>
     </>
   )

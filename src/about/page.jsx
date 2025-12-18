@@ -50,7 +50,8 @@ const About = () => {
        </div>
        <article className="w-150 text-xl max-md:w-[20rem] max-md:text-[11px] text-gray-600 max-lg:text-[13px]">
          <h1 className="font-bold text-3xl max-md:text-2xl text-black mb-4">Our Story</h1>
-         <p>June was born from a simple truth. Founders and businesses spend too much time and money building core digital infrastructure, including but not limited to payments, identity, workflows, CRM, and compliance. Core systems should accelerate growth, enable scaling and let you focus on your customers.</p>
+         <p style="text-align: justify;">
+          June was born from a simple truth. Founders and businesses spend too much time and money building core digital infrastructure, including but not limited to payments, identity, workflows, CRM, and compliance. Core systems should accelerate growth, enable scaling and let you focus on your customers.</p>
 
          <p className="mt-4">
            June is a cloud-native platform that acts as the invisible CTO for Africa's businesses. Launch any venture with ready-made  APIs, plug and play modules and enterprise-grade security, so you can scale confidently and delight your customers, without rebuilding core infrastructure.

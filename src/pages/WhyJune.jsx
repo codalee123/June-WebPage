@@ -46,7 +46,7 @@ const WhyJune = () => {
             {/* header */}
           <div className=' flex flex-col items-center justify-center'>
             <p className="text-4xl font-extrabold max-md:text-4xl">Why June?</p>
-            <p className='text-[18px]  max-md:text-[17px] font-normal my-5 max-lg:max-w-full max-w-[52%] '>
+            <p className='text-[18px]  max-md:text-[17px] font-normal my-5 max-lg:max-w-full max-w-[100%] '>
               With June, you gain more than technology. You gain a partner committed
               to powering transformation across the continent.
             </p>

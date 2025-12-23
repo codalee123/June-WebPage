@@ -113,7 +113,7 @@ export const ExploreWithButton =({text,desc,text1="Book a Demo",text2="Explore I
 
 export const ExploreWithoutButton =({text,desc})=> {
   return(
-    <div className='full h-max font-inter flex text-white py-20 max-lg:px-8 max-md:px-5 bg-black justify-center items-center overflow-hidden'>
+    <div className='w-full h-max font-inter flex text-white py-20 max-lg:px-8 max-md:px-5 bg-black justify-center items-center overflow-hidden'>
 
       {/* Background Image */}
         <img

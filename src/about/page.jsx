@@ -10,7 +10,7 @@ const About = () => {
         Africa's <br /> Cloud Backbone for Builders and Businesses
         </div>
         <div className="h-100 w-125 max-md:h-75 max-md:w-80 max-lg:w-135 max-lg:h-90 cursor-pointer">
-        <img src="/about_hero.svg" alt="" />
+        <img src="/About-hero.svg" alt="" />
         </div>
       </div>
    </section>
@@ -46,7 +46,7 @@ const About = () => {
 
      <div className="mt-20 flex w-full justify-between gap-8 max-md:flex-col max-md:items-center max-lg:w-[650px]">
        <div className="w-100 max-md:w-[20rem] max-lg:w-[20rem] cursor-pointer">
-        <img src="/about_story.svg" alt="image"/>
+        <img src="/SubAbout-hero.svg" alt="image"/>
        </div>
        <article className="w-150 text-xl max-md:w-[20rem] max-md:text-[11px] text-gray-600 max-lg:text-[13px]">
          <h1 className="font-bold text-3xl max-md:text-2xl text-black mb-4">Our Story</h1>

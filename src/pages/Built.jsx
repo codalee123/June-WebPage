@@ -68,19 +68,19 @@ const Built = () => {
 
         {/* Image Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-          <div className="rounded-lg overflow-hidden">
+          <div className="rounded-lg overflow-hidden slide-in " style={{ animationDelay: "0s" }}>
             <img src="/founder2.svg" alt="Founders" className="w-full object-cover" />
           </div>
 
-          <div className="rounded-lg overflow-hidden ">
+          <div className="rounded-lg overflow-hidden slide-in " style={{ animationDelay: "0.2s" }}>
             <img src="/Sme.svg" alt="SMEs" className="w-full object-cover" />
           </div>
 
-          <div className="rounded-lg -ml-9  max-md:ml-0  max-lg:ml-0 w-full   ">
+          <div className="rounded-lg -ml-9  max-md:ml-0  max-lg:ml-0 w-full slide-in " style={{ animationDelay: "0.4s" }} >
             <img src="/enterprise.svg" alt="Enterprises" className="w-full  object-cover" />
           </div>
 
-          <div className="rounded-lg overflow-hidden">
+          <div className="rounded-lg overflow-hidden slide-in" style={{ animationDelay: "0.6s" }}>
             <img src="/image.svg" alt="Solutions" className="w-full  object-cover" />
           </div>
         </div>

@@ -53,7 +53,7 @@ export default Card
 // ABOUT CARD
 export const CorePillars = ({ imgPath, title, text, cardBg="bg-white", imageSz="w-15"}) => {
  return(
-  <section className={`${cardBg} font-inter rounded-md hover:shadow-md cursor-pointer flex flex-col items-center text-center px-6 py-4 gap-2.5`}>
+  <section className={`${cardBg} font-inter rounded-md hover:shadow-md cursor-pointer flex flex-col items-center text-center px-6 py-4 gap-2.5 slide-in `} style={{ animationDelay: "0.2s"}} >
 
     <img src={imgPath} alt='vectorImg' className={`${imageSz}`} />
 
@@ -67,7 +67,7 @@ export const CorePillars = ({ imgPath, title, text, cardBg="bg-white", imageSz="
 
 export const ContactCard = ({ imgPath, title, text, cardBg="bg-white", imageSz="w-20"}) => {
  return(
-  <section className={`${cardBg} hover:shadow-md cursor-pointer font-inter font-normal rounded-lg flex flex-col items-center text-center px-8 pt-4  pb-15 gap-8`}>
+  <section style={{ animationDelay: "0.2s"}} className={`${cardBg} slide-in hover:shadow-md cursor-pointer font-inter font-normal rounded-lg flex flex-col items-center text-center px-8 pt-4  pb-15 gap-8`}>
 
     <img src={imgPath} alt='vectorImg' className={`${imageSz} `} />
 
@@ -112,7 +112,7 @@ export const Card2 =({icon,role,title,desc})=>{
 
 export const Card3 = ({icon,title,desc})=>{
   return(
-    <div className="w-full  h-48 bg-[#fbf8ff] cursor-pointer hover:shadow-md rounded-lg  flex flex-col  p-6 relative ">
+    <div className="w-full slide-in  h-48 bg-[#fbf8ff] cursor-pointer hover:shadow-md rounded-lg  flex flex-col  p-6 relative " style={{ animationDelay: "0.2s"}}>
 
       {/* Icon top-right */}
         <img

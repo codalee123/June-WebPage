@@ -29,7 +29,7 @@ const Footer = () => {
                  className='bg-white text-black font-normal flex text-start text-base  p-4 max-lg:px-13 max-md:px-5 justify-self-start w-[60%] outline-0 max-md:w-full relative '>
                 </input>
 
-                <button className='bg-[#a16afa] text-white font-normal text-center text-base  p-4 max-lg:px-13 max-md:w-full w-[40%] relative cursor-pointer '
+                <button className='bg-[#a16afa] text-white font-normal text-center text-base hover:bg-[#8f54f0]  p-4 max-lg:px-13 max-md:w-full w-[40%] relative cursor-pointer '
                 onClick={()=>{
                   const Email= input.value
                   alert(`${ email} You've Succefully Subscribe to the Newsletter , click ok to continue and check your mail`);

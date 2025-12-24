@@ -69,19 +69,19 @@ const Built = () => {
         {/* Image Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
           <div className="rounded-lg overflow-hidden slide-in " style={{ animationDelay: "0.2s" }}>
-            <img src="/founder2.svg" alt="Founders" className="w-full object-cover cursor-pointer " />
+            <img src="/founder2.svg" alt="Founders" className="w-full hover-lift object-cover cursor-pointer " />
           </div>
 
           <div className="rounded-lg overflow-hidden slide-in " style={{ animationDelay: "0.4s" }}>
-            <img src="/Sme.svg" alt="SMEs" className="w-full object-cover cursor-pointer " />
+            <img src="/Sme.svg" alt="SMEs" className="w-full object-cover hover-lift cursor-pointer " />
           </div>
 
           <div className="rounded-lg overflow-hidden slide-in " style={{ animationDelay: "0.6s" }} >
-            <img src="/enterprise.svg" alt="Enterprises" className="w-full  object-cover cursor-pointer " />
+            <img src="/enterprise.svg" alt="Enterprises" className="w-full hover-lift object-cover cursor-pointer " />
           </div>
 
-          <div className="rounded-lg overflow-hidden slide-in" style={{ animationDelay: "0.8s" }}>
-            <img src="/image.svg" alt="Solutions" className="w-full  object-cover cursor-pointer " />
+          <div className="rounded-lg overflow-hidden slide-in " style={{ animationDelay: "0.8s" }}>
+            <img src="/image.svg" alt="Solutions" className="w-full hover-lift object-cover cursor-pointer " />
           </div>
         </div>
       </div>

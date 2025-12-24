@@ -69,19 +69,19 @@ const Built = () => {
         {/* Image Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
           <div className="rounded-lg overflow-hidden">
-            <img src="/founder2.svg" alt="Founders" className="w-full h-full object-cover" />
+            <img src="/founder2.svg" alt="Founders" className="w-full object-cover" />
+          </div>
+
+          <div className="rounded-lg overflow-hidden ">
+            <img src="/Sme.svg" alt="SMEs" className="w-full object-cover" />
+          </div>
+
+          <div className="rounded-lg -ml-9  max-md:ml-0  max-lg:ml-0 w-full   ">
+            <img src="/enterprise.svg" alt="Enterprises" className="w-full  object-cover" />
           </div>
 
           <div className="rounded-lg overflow-hidden">
-            <img src="/Sme.svg" alt="SMEs" className="w-full h-full object-cover" />
-          </div>
-
-          <div className="rounded-lg overflow-hidden">
-            <img src="/enterprise.svg" alt="Enterprises" className="w-full h-full object-cover" />
-          </div>
-
-          <div className="rounded-lg overflow-hidden">
-            <img src="/image.svg" alt="Solutions" className="w-full h-full object-cover" />
+            <img src="/image.svg" alt="Solutions" className="w-full  object-cover" />
           </div>
         </div>
       </div>
